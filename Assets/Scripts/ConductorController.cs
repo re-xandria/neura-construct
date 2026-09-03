@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,11 +26,16 @@ public class ConductorController : MonoBehaviour
 
     public Image indicator;
 
+    private int lastBeat = -1;
+    private double flashUntil;
+    public float flashDuration = 0.5f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //Load the AudioSource attached to the Conductor GameObject
-        
+    
+        // currBeatInd = beatCount;
+
         //Calculate the number of seconds in each beat
         secPerBeat = 60f / songBpm;
 
@@ -38,6 +44,7 @@ public class ConductorController : MonoBehaviour
 
         //Start the music
         musicSource.Play();
+
     }
 
     // Update is called once per frame
@@ -48,7 +55,19 @@ public class ConductorController : MonoBehaviour
 
         //determine how many beats since the song started
         songPositionInBeats = songPosition / secPerBeat;
-        if (Math.Floor(songPositionInBeats % 4) == 0) { print("BEAT!"); indicator.color = Color.blue; } else { indicator.color = Color.antiqueWhite; }
+
+        // Math functions for float
+        int currBeat = Mathf.FloorToInt(songPositionInBeats);
+
+        if (currBeat != lastBeat)
+        {
+            lastBeat = currBeat;
+            // track via dsp time and curr beat for consistent value checking between frames
+            flashUntil = AudioSettings.dspTime + flashDuration;
+        }
+        
+        indicator.color = AudioSettings.dspTime < flashUntil ? Color.blue : Color.antiqueWhite;
 
     }
+
 }
