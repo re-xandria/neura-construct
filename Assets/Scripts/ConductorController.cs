@@ -26,7 +26,7 @@ public class ConductorController : MonoBehaviour
 
     public Image indicator;
 
-    private int lastBeat = -1;
+    public int lastBeat = -1;
     private double flashUntil;
     public float flashDuration = 0.5f;
 
@@ -67,7 +67,7 @@ public class ConductorController : MonoBehaviour
         }
         
         indicator.color = AudioSettings.dspTime < flashUntil ? Color.blue : Color.antiqueWhite;
-
+        // for some reason it isnt flashing anymore, just staying blue
     }
 
 }
