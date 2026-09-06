@@ -33,8 +33,6 @@ public class ConductorController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-    
-        // currBeatInd = beatCount;
 
         //Calculate the number of seconds in each beat
         secPerBeat = 60f / songBpm;
@@ -61,13 +59,16 @@ public class ConductorController : MonoBehaviour
 
         if (currBeat != lastBeat)
         {
+            // print(currBeat + " | " + lastBeat);
             lastBeat = currBeat;
             // track via dsp time and curr beat for consistent value checking between frames
             flashUntil = AudioSettings.dspTime + flashDuration;
         }
         
+        print(AudioSettings.dspTime + " | " + flashUntil);
         indicator.color = AudioSettings.dspTime < flashUntil ? Color.blue : Color.antiqueWhite;
-        // for some reason it isnt flashing anymore, just staying blue
+        // audio time is always less than the flash until time, causing the blue to always show
+        // this happens because current beat never equals last beat so flash until is always updated
     }
 
 }

@@ -14,20 +14,20 @@ public class NoteController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        notePrefab = gameObject;
-        float distance = Vector3.Distance(notePrefab.transform.position, judgementLine.transform.position);
-        speed = distance / targetBeat;
+        // notePrefab = gameObject;
+        // float distance = Vector3.Distance(notePrefab.transform.position, judgementLine.transform.position);
+        // speed = distance / targetBeat;
     }
 
     // Update is called once per frame
     void Update()
     {
-        int currBeat = Mathf.FloorToInt(conductorController.songPositionInBeats);
+        // int currBeat = Mathf.FloorToInt(conductorController.songPositionInBeats);
         
-        if (conductorController.lastBeat != currBeat)
-        {
-            notePrefab.transform.position = new Vector3(notePrefab.transform.position.x, notePrefab.transform.position.y + speed, notePrefab.transform.position.z);
-        }
+        // if (conductorController.lastBeat != currBeat)
+        // {
+        //     notePrefab.transform.position = new Vector3(notePrefab.transform.position.x, notePrefab.transform.position.y + speed, notePrefab.transform.position.z);
+        // }
     }
 }
 
