@@ -593,7 +593,7 @@ MonoBehaviour:
   musicSource: {fileID: 1277298843}
   indicator: {fileID: 1340352501}
   lastBeat: -1
-  flashDuration: 0.5
+  flashDuration: 0.3
 --- !u!4 &1235006567
 Transform:
   m_ObjectHideFlags: 0
