@@ -19,7 +19,7 @@ public class ConductorController : MonoBehaviour
     public float songPositionInBeats;
 
     //How many seconds have passed since the song started
-    public float dspSongTime;
+    public double dspSongTime;
 
     //an AudioSource attached to this GameObject that will play the music.
     public AudioSource musicSource;
@@ -27,8 +27,8 @@ public class ConductorController : MonoBehaviour
     public Image indicator;
 
     public int lastBeat = -1;
-    private double flashUntil;
-    public float flashDuration = 0.5f;
+    private float flashUntil;
+    public float flashDuration = .5f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -62,13 +62,11 @@ public class ConductorController : MonoBehaviour
             // print(currBeat + " | " + lastBeat);
             lastBeat = currBeat;
             // track via dsp time and curr beat for consistent value checking between frames
-            flashUntil = AudioSettings.dspTime + flashDuration;
+            flashUntil = songPosition + flashDuration;
         }
-        
-        print(AudioSettings.dspTime + " | " + flashUntil);
-        indicator.color = AudioSettings.dspTime < flashUntil ? Color.blue : Color.antiqueWhite;
-        // audio time is always less than the flash until time, causing the blue to always show
-        // this happens because current beat never equals last beat so flash until is always updated
+
+        indicator.color = songPosition < flashUntil ? Color.blue : Color.antiqueWhite;
+
     }
 
 }
