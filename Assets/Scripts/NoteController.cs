@@ -6,12 +6,15 @@ public class NoteController : MonoBehaviour
 {
 
     public float targetBeat;
+
     private Vector3 spawnPosition;
     private float spawnBeat;
     private float travelBeats;
+    private float destroyBeat;
 
     public ConductorController conductorController;
     public GameObject judgementLine;
+    public GameObject destroyLine;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,6 +22,7 @@ public class NoteController : MonoBehaviour
         spawnPosition = transform.position;
         spawnBeat = conductorController.songPositionInBeats;
         travelBeats = targetBeat - spawnBeat;
+        destroyBeat = travelBeats + 15;
 
         if (travelBeats <= 0f)
         {
@@ -32,17 +36,34 @@ public class NoteController : MonoBehaviour
     void Update()
     {
         float currBeat = Mathf.FloorToInt(conductorController.songPositionInBeats);
-        float progress = Mathf.InverseLerp(spawnBeat, targetBeat, currBeat);
 
-        transform.position = Vector3.Lerp(
-            spawnPosition,
-            judgementLine.transform.position,
-            progress
-        );
-        
+        if (transform.position.y > judgementLine.transform.position.y)
+        {
+            float progress = Mathf.InverseLerp(spawnBeat, targetBeat, currBeat);
+
+            transform.position = Vector3.Lerp(
+                spawnPosition,
+                judgementLine.transform.position,
+                progress
+            );
+        }
+        else
+        {
+            float progress = Mathf.InverseLerp(targetBeat, destroyBeat, currBeat);
+
+            transform.position = Vector3.Lerp(
+                judgementLine.transform.position,
+                destroyLine.transform.position,
+                progress
+            );
+        } 
+
     }
 }
 
 // Note gets to the beat at the intended time but stops
 // Note does not move smoothly, moves x distance on each beat
-// How can we get the beat to
+// How can we get the beat to move smoothly towards the line?
+// How can we get the beat to continue towards the bottom of the screen after it gets to the line?
+
+// Make a second judgement line that the note must get to after the first one, and delete it from the world when it gets to that line
