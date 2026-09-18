@@ -5,20 +5,19 @@ using UnityEngine.UI;
 public class ButtonController : MonoBehaviour
 {
 
+    public int buttonId;
     public KeyCode _Key;
+    public LevelManager levelManager;
 
     private Button _button;
     private Image image;
 
-    void Awake()
+    void Start()
     {
         _button = GetComponent<Button>();
         image = GetComponent<Image>();
-    }
-
-    void Start()
-    {
-
+        // add eventlistener here
+        _button.onClick.AddListener(() => levelManager.saveButtonData(buttonId, _Key));
     }
 
     void Update()
@@ -27,7 +26,6 @@ public class ButtonController : MonoBehaviour
         {
             // If we attach an onClick function to button it will be invoked
             _button.onClick.Invoke();
-            print("Button was pressed!");
             image.color = Color.coral;
         }
 
@@ -38,3 +36,4 @@ public class ButtonController : MonoBehaviour
     }
 
 }
+

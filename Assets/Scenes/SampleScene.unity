@@ -289,7 +289,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a274bdc76095cb54b9fb50a0c8ec64dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  buttonId: 2
   _Key: 100
+  levelManager: {fileID: 2035386119}
 --- !u!114 &143792978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,7 +425,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a274bdc76095cb54b9fb50a0c8ec64dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  buttonId: 0
   _Key: 97
+  levelManager: {fileID: 2035386119}
 --- !u!114 &209071746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1194,7 +1198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a274bdc76095cb54b9fb50a0c8ec64dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  buttonId: 1
   _Key: 115
+  levelManager: {fileID: 2035386119}
 --- !u!114 &1594445707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1328,7 +1334,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a274bdc76095cb54b9fb50a0c8ec64dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  buttonId: 3
   _Key: 102
+  levelManager: {fileID: 2035386119}
 --- !u!114 &1883161765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1396,7 +1404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cfd97290fd3fe24296557c6a48e0291, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  conductorController: {fileID: 0}
+  conductorController: {fileID: 1235006566}
 --- !u!4 &2035386120
 Transform:
   m_ObjectHideFlags: 0
