@@ -1,3 +1,4 @@
+using System.IO;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
@@ -11,6 +12,7 @@ public class LevelManager : MonoBehaviour
     private float startTime;
     private float songPositionInBeats;
     private LevelData levelData = new LevelData();
+    private string path => "D:/Unity Games/neura-construct/Assets/Scripts/Data/data.json";
 
     void Start()
     {
@@ -38,15 +40,12 @@ public class LevelManager : MonoBehaviour
         print($"Button Pressed! Button ID: {press.buttonId} | Key Pressed: {press.keyPressed} | Beat Pressed On: {press.beatPressed}");
     }
 
+    void OnApplicationQuit()
+    {
+        string json = JsonUtility.ToJson(levelData);
+        print($"JSON: {json}");
+        print(path);
+        File.WriteAllText(path, json);
+    }
+
 }
-
-// Reference to conductor to track song time 
-// Start a timer to track the song 
-// Watches for onButtonPress function triggers from ButtonController file 
-// Each trigger of onButtonPress writes to buttonData list -> private []
-// Create a JSON file called levelData.json, write list data to JSON file
-
-// on button press create an object that records currBeat, button name/id, and key
-// when we hit the stop button, store the buttonData to the json file
-
-// create button press function, create an object with all the data points, then add it to button data list

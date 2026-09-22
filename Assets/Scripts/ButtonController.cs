@@ -12,6 +12,8 @@ public class ButtonController : MonoBehaviour
     private Button _button;
     private Image image;
 
+    // eventually update to the new input system
+
     void Start()
     {
         _button = GetComponent<Button>();
@@ -19,6 +21,7 @@ public class ButtonController : MonoBehaviour
         // add eventlistener here
         _button.onClick.AddListener(() => levelManager.saveButtonData(buttonId, _Key));
     }
+    
 
     void Update()
     {

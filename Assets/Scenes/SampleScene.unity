@@ -1432,6 +1432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Note
       objectReference: {fileID: 0}
+    - target: {fileID: 3430592634084633020, guid: cdfbcc3d348f6f44c9fdbeb3c1232625, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5982909931405262385, guid: cdfbcc3d348f6f44c9fdbeb3c1232625, type: 3}
       propertyPath: targetBeat
       value: 10

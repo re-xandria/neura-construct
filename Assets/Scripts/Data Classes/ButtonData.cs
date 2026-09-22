@@ -2,6 +2,7 @@
 using System;
 using UnityEngine;
 
+[System.Serializable]
 public class ButtonData
 {
     public int buttonId;
