@@ -16,9 +16,17 @@ public class NoteController : MonoBehaviour
     public GameObject judgementLine;
     public GameObject destroyLine;
 
+    public bool legacyNotebehavior;
+
+    private ConductorController _ConductorController;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (ConductorController.Instance) _ConductorController = ConductorController.Instance;
+
+        if (!legacyNotebehavior) return; 
+
         spawnPosition = transform.position;
         spawnBeat = conductorController.songPositionInBeats;
         travelBeats = targetBeat - spawnBeat;
@@ -33,30 +41,38 @@ public class NoteController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate() // each note should be handled
     {
-        float currBeat = Mathf.FloorToInt(conductorController.songPositionInBeats);
-
-        if (transform.position.y > judgementLine.transform.position.y)
+        if (legacyNotebehavior)
         {
-            float progress = Mathf.InverseLerp(spawnBeat, targetBeat, currBeat);
+            float currBeat = Mathf.FloorToInt(conductorController.songPositionInBeats);
 
-            transform.position = Vector3.Lerp(
-                spawnPosition,
-                judgementLine.transform.position,
-                progress
-            );
+            if (transform.position.y > judgementLine.transform.position.y)
+            {
+                float progress = Mathf.InverseLerp(spawnBeat, targetBeat, currBeat);
+
+                transform.position = Vector3.Lerp(
+                    spawnPosition,
+                    judgementLine.transform.position,
+                    progress
+                );
+            }
+            else
+            {
+                float progress = Mathf.InverseLerp(targetBeat, destroyBeat, currBeat);
+
+                transform.position = Vector3.Lerp(
+                    judgementLine.transform.position,
+                    destroyLine.transform.position,
+                    progress
+                );
+            }
         }
         else
         {
-            float progress = Mathf.InverseLerp(targetBeat, destroyBeat, currBeat);
-
-            transform.position = Vector3.Lerp(
-                judgementLine.transform.position,
-                destroyLine.transform.position,
-                progress
-            );
-        } 
+            // we'll do this from the manager
+            //transform.Translate(Vector3.down * (_ConductorController.secPerBeat * _ConductorController.songBpm/10));
+        }
 
     }
 }

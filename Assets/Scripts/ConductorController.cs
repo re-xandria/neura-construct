@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class ConductorController : MonoBehaviour
 {
+    public static ConductorController Instance { get; private set; }
+
+    public bool recordAudio = false; // if false does not record
+    public bool playGame = false; // this should play back notes we have
+
     //Song beats per minute
     //This is determined by the song you're trying to sync up to
     public float songBpm;
@@ -30,6 +35,13 @@ public class ConductorController : MonoBehaviour
     private float flashUntil;
     public float flashDuration = .5f;
 
+    private void Awake()
+    {
+        if (Instance != null && Instance != this) Destroy(this);
+        else Instance = this;
+
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -45,28 +57,42 @@ public class ConductorController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    // FIXEDUpdate is called once per frame
+    void FixedUpdate()
     {
-        //determine how many seconds since the song started
-        songPosition = (float)(AudioSettings.dspTime - dspSongTime);
-
-        //determine how many beats since the song started
-        songPositionInBeats = songPosition / secPerBeat;
-
-        // Math functions for float
-        int currBeat = Mathf.FloorToInt(songPositionInBeats);
-
-        if (currBeat != lastBeat)
+        if (recordAudio || playGame)
         {
-            // print(currBeat + " | " + lastBeat);
-            lastBeat = currBeat;
-            // track via dsp time and curr beat for consistent value checking between frames
-            flashUntil = songPosition + flashDuration;
+            if (musicSource.isPlaying == false) musicSource.UnPause();
+
+            //determine how many seconds since the song started
+            songPosition = (float)(AudioSettings.dspTime - dspSongTime);
+
+            //determine how many beats since the song started
+            songPositionInBeats = songPosition / secPerBeat;
+
+            // Math functions for float
+            int currBeat = Mathf.FloorToInt(songPositionInBeats);
+
+            if (currBeat != lastBeat)
+            {
+                // print(currBeat + " | " + lastBeat);
+                lastBeat = currBeat;
+                // track via dsp time and curr beat for consistent value checking between frames
+                flashUntil = songPosition + flashDuration;
+            }
+
+            indicator.color = songPosition < flashUntil ? Color.blue : Color.antiqueWhite;
+        }
+        else
+        {
+            if (musicSource.isPlaying) musicSource.Pause();
         }
 
-        indicator.color = songPosition < flashUntil ? Color.blue : Color.antiqueWhite;
+    }
 
+    public void ToggleRecord()
+    {
+        recordAudio = !recordAudio;
     }
 
 }
