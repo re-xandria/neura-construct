@@ -25,7 +25,7 @@ public class NoteController : MonoBehaviour
     {
         if (ConductorController.Instance) _ConductorController = ConductorController.Instance;
 
-        if (!legacyNotebehavior) return; 
+        if (!legacyNotebehavior) return;
 
         spawnPosition = transform.position;
         spawnBeat = conductorController.songPositionInBeats;

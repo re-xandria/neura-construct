@@ -32,14 +32,14 @@ public class ButtonController : MonoBehaviour
             _button.onClick.Invoke();
             image.color = Color.coral;
 
-            currentNote = new NoteData((NoteData.BUTTONTYPE)buttonId, levelManager.NoteList.Count, Time.time - levelManager.startTime);
+            currentNote = new NoteData((NoteData.BUTTONTYPE)buttonId, levelManager.NoteList.Count, levelManager.songPositionInBeats);
         }
 
         if (Input.GetKeyUp(_Key))
         {
             image.color = Color.white;
 
-            if (currentNote != null) currentNote.holdTime = Time.time - currentNote.timeStamp;
+            if (currentNote != null) currentNote.holdTime = levelManager.songPositionInBeats - currentNote.timeStamp;
             levelManager.StoreNoteData(currentNote);
             currentNote = null;
         }

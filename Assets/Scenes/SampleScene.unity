@@ -1883,116 +1883,93 @@ MonoBehaviour:
   NoteList:
   - buttonType: 0
     buttonId: 0
-    timeStamp: -2162.4446
-    holdTime: 2168.0483
-  - buttonType: 0
+    timeStamp: 2.2755644
+    holdTime: 0.22755575
+  - buttonType: 1
     buttonId: 1
-    timeStamp: -2157.833
-    holdTime: 2168.071
-  - buttonType: 1
+    timeStamp: 2.7306757
+    holdTime: 0.19911098
+  - buttonType: 2
     buttonId: 2
-    timeStamp: -2155.6243
-    holdTime: 2168.0479
-  - buttonType: 2
-    buttonId: 3
-    timeStamp: -2153.4146
-    holdTime: 2168.0864
+    timeStamp: 3.0435646
+    holdTime: 0.19911122
   - buttonType: 3
+    buttonId: 3
+    timeStamp: 3.4702313
+    holdTime: 0.14222217
+  - buttonType: 2
     buttonId: 4
-    timeStamp: -2151.1448
-    holdTime: 2168.0276
-  - buttonType: 2
+    timeStamp: 3.7546756
+    holdTime: 0.28444457
+  - buttonType: 1
     buttonId: 5
-    timeStamp: -2149.055
-    holdTime: 2168.0647
-  - buttonType: 1
+    timeStamp: 4.2951202
+    holdTime: 0.19911098
+  - buttonType: 0
     buttonId: 6
-    timeStamp: -2146.7378
-    holdTime: 2168.052
-  - buttonType: 0
-    buttonId: 7
-    timeStamp: -2145.8882
-    holdTime: 2168.0728
+    timeStamp: 4.721787
+    holdTime: 0.14222193
   - buttonType: 1
-    buttonId: 8
-    timeStamp: -2145.1191
-    holdTime: 2168.0708
+    buttonId: 7
+    timeStamp: 5.0346756
+    holdTime: 0.19911146
   - buttonType: 2
+    buttonId: 8
+    timeStamp: 5.432898
+    holdTime: 0.1422224
+  - buttonType: 3
     buttonId: 9
-    timeStamp: -2144.5176
-    holdTime: 2168.0608
-  - buttonType: 0
+    timeStamp: 5.8026757
+    holdTime: 0.1706667
+  - buttonType: 2
     buttonId: 10
-    timeStamp: -2142.245
-    holdTime: 2168.0508
+    timeStamp: 6.1724534
+    holdTime: 0.19911146
   - buttonType: 1
     buttonId: 11
-    timeStamp: -2141.9722
-    holdTime: 2168.0737
-  - buttonType: 2
+    timeStamp: 6.5706754
+    holdTime: 0.4266672
+  - buttonType: 0
     buttonId: 12
-    timeStamp: -2141.6816
-    holdTime: 2168.0576
-  - buttonType: 3
+    timeStamp: 7.3102317
+    holdTime: 0.14222193
+  - buttonType: 1
     buttonId: 13
-    timeStamp: -2141.4001
-    holdTime: 2168.0408
+    timeStamp: 7.651564
+    holdTime: 0.14222288
   - buttonType: 2
     buttonId: 14
-    timeStamp: -2140.8743
-    holdTime: 2168.0693
-  - buttonType: 1
-    buttonId: 15
-    timeStamp: -2140.5757
-    holdTime: 2168.0579
-  - buttonType: 0
-    buttonId: 16
-    timeStamp: -2140.3037
-    holdTime: 2168.0718
-  - buttonType: 0
-    buttonId: 17
-    timeStamp: -2139.9822
-    holdTime: 2168.0461
-  - buttonType: 1
-    buttonId: 18
-    timeStamp: -2139.729
-    holdTime: 2168.0566
-  - buttonType: 2
-    buttonId: 19
-    timeStamp: -2139.4485
-    holdTime: 2168.0518
+    timeStamp: 8.021342
+    holdTime: 0.19911098
   - buttonType: 3
+    buttonId: 15
+    timeStamp: 8.419564
+    holdTime: 0.1706667
+  - buttonType: 2
+    buttonId: 16
+    timeStamp: 8.789342
+    holdTime: 0.17066765
+  - buttonType: 1
+    buttonId: 17
+    timeStamp: 9.187565
+    holdTime: 0.22755527
+  - buttonType: 0
+    buttonId: 18
+    timeStamp: 9.557343
+    holdTime: 0.22755527
+  - buttonType: 1
+    buttonId: 19
+    timeStamp: 10.18312
+    holdTime: 0.19911194
+  - buttonType: 2
     buttonId: 20
-    timeStamp: -2139.1492
-    holdTime: 2168.0198
+    timeStamp: 10.524453
+    holdTime: 0.19911098
   - buttonType: 3
     buttonId: 21
-    timeStamp: -2138.6992
-    holdTime: 2168.0444
-  - buttonType: 2
-    buttonId: 22
-    timeStamp: -2138.4487
-    holdTime: 2168.0774
-  - buttonType: 1
-    buttonId: 23
-    timeStamp: -2138.1538
-    holdTime: 2168.0725
-  - buttonType: 0
-    buttonId: 24
-    timeStamp: -2137.8496
-    holdTime: 2168.0486
-  - buttonType: 1
-    buttonId: 25
-    timeStamp: -2137.2688
-    holdTime: 2168.0554
-  - buttonType: 2
-    buttonId: 26
-    timeStamp: -2136.6616
-    holdTime: 2168.0544
-  - buttonType: 3
-    buttonId: 27
-    timeStamp: -2136.1528
-    holdTime: 2168.0742
+    timeStamp: 10.951119
+    holdTime: 0.1422224
+  songPositionInBeats: -20
   notePrefab: {fileID: 8045660437492576465, guid: cdfbcc3d348f6f44c9fdbeb3c1232625, type: 3}
   noteParent: {fileID: 268579027}
   noteCanvasButtons:
@@ -2000,6 +1977,7 @@ MonoBehaviour:
   - {fileID: 1594445704}
   - {fileID: 143792975}
   - {fileID: 1883161762}
+  judgementLine: {fileID: 120650873}
 --- !u!4 &2035386120
 Transform:
   m_ObjectHideFlags: 0
