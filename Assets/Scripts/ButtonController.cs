@@ -8,6 +8,7 @@ public class ButtonController : MonoBehaviour
     public int buttonId;
     public KeyCode _Key;
     public LevelManager levelManager;
+    public ConductorController conductorController;
 
     private Button _button;
     private Image image;
@@ -32,14 +33,14 @@ public class ButtonController : MonoBehaviour
             _button.onClick.Invoke();
             image.color = Color.coral;
 
-            currentNote = new NoteData((NoteData.BUTTONTYPE)buttonId, levelManager.NoteList.Count, levelManager.songPositionInBeats);
+            currentNote = new NoteData((NoteData.BUTTONTYPE)buttonId, levelManager.NoteList.Count, conductorController.songPositionInBeats);
         }
 
         if (Input.GetKeyUp(_Key))
         {
             image.color = Color.white;
 
-            if (currentNote != null) currentNote.holdTime = levelManager.songPositionInBeats - currentNote.timeStamp;
+            if (currentNote != null) currentNote.holdTime = conductorController.songPositionInBeats - currentNote.timeStamp;
             levelManager.StoreNoteData(currentNote);
             currentNote = null;
         }

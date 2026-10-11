@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
@@ -23,7 +24,7 @@ public class LevelManager : MonoBehaviour
     public Transform noteParent; // where to spawn the notes under
     public List<Transform> noteCanvasButtons; // the buttons we can press
 
-    private Vector3 spawnPos = new Vector3(0, 500, 0); // pos to spawn the beats
+    private Vector3 spawnPos = new Vector3(0, 1000, 0); // pos to spawn the beats
     private float spawnBeat; // beat we start spawning notes
 
     public GameObject judgementLine;
@@ -46,14 +47,15 @@ public class LevelManager : MonoBehaviour
         {
             NoteData ndata = NoteList[i];
             Transform noteClone = Instantiate(notePrefab, noteParent);
-            noteClone.transform.position = noteCanvasButtons[(int)ndata.buttonType].position + spawnPos;
+            noteClone.transform.position = noteCanvasButtons[(int)ndata.buttonType].position; // look into this line
             spawnedNotesToPlay.Add(noteClone);
         }
     }
 
     void FixedUpdate()
     {
-        // spawn the beats 3 seconds before they need to appear
+        float currBeat = Mathf.FloorToInt(conductorController.songPositionInBeats);
+
         // calc the progress mathf using inverse lerp from spawn beat, target beat which is timeStamp, and songPositionInBeats)
         // translate position using vector3 lerp, using spawnPos, pos of judgementLine, and progress
         // find a way to make better later without using lerp
@@ -61,11 +63,15 @@ public class LevelManager : MonoBehaviour
         // translate the note such that it reaches the judgement line at the spawn beat
         // we need to delay the song starting for a few seconds to let the initial beats spawn as expected
 
+        // notes are very choppy and likely not reaching the judegement line at the right time
+
         if (spawnedNotesToPlay.Count > 0)
             for (int i = 0; i < spawnedNotesToPlay.Count; i++)
             {
                 float targetBeat = NoteList[i].timeStamp;
-                spawnedNotesToPlay[i].position = Vector3.Lerp(spawnPos, judgementLine.transform.position, progress);
+                float progress = Mathf.InverseLerp(spawnBeat, targetBeat, currBeat);
+                spawnedNotesToPlay[i].position = Vector3.Lerp(noteCanvasButtons[(int)NoteList[i].buttonType].position + spawnPos, judgementLine.transform.position, progress); // look into this line
+                print($"Note {i} | Pos {spawnedNotesToPlay[i].position} | Target beat {targetBeat} | Progess {progress}");
             }
     }
 

@@ -71,7 +71,7 @@ public class NoteController : MonoBehaviour
         else
         {
             // we'll do this from the manager
-            //transform.Translate(Vector3.down * (_ConductorController.secPerBeat * _ConductorController.songBpm/10));
+            // transform.Translate(Vector3.down * (_ConductorController.secPerBeat * _ConductorController.songBpm/10));
         }
 
     }
