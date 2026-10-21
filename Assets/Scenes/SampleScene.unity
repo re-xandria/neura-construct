@@ -273,6 +273,143 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120650873}
   m_CullTransparentMesh: 1
+--- !u!1 &132607129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 132607130}
+  - component: {fileID: 132607132}
+  - component: {fileID: 132607131}
+  m_Layer: 5
+  m_Name: Time
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &132607130
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132607129}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 727251339}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 180.25183}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &132607131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132607129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 0.00
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &132607132
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132607129}
+  m_CullTransparentMesh: 1
 --- !u!1 &143792974
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,6 +961,7 @@ RectTransform:
   - {fileID: 1883161762}
   - {fileID: 1423249301}
   - {fileID: 268579027}
+  - {fileID: 132607130}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1887,141 +2025,60 @@ MonoBehaviour:
   NoteList:
   - buttonType: 0
     buttonId: 0
-    timeStamp: 2.0479794
-    holdTime: 0.25600004
+    timeStamp: 3.479111
+    holdTime: 0.25600028
   - buttonType: 1
     buttonId: 1
-    timeStamp: 2.4177573
-    holdTime: 0.25600004
+    timeStamp: 3.8204443
+    holdTime: 0.19911122
   - buttonType: 2
     buttonId: 2
-    timeStamp: 2.844424
-    holdTime: 0.22755551
+    timeStamp: 4.161778
+    holdTime: 0.25599957
   - buttonType: 3
     buttonId: 3
-    timeStamp: 3.5270903
-    holdTime: 0.1422224
+    timeStamp: 4.5315557
+    holdTime: 0.39822197
   - buttonType: 2
     buttonId: 4
-    timeStamp: 3.9253128
-    holdTime: 0.17066646
+    timeStamp: 5.2142224
+    holdTime: 0.22755527
   - buttonType: 1
     buttonId: 5
-    timeStamp: 4.323535
-    holdTime: 0.14222193
+    timeStamp: 5.669333
+    holdTime: 0.19911146
   - buttonType: 0
     buttonId: 6
-    timeStamp: 4.6364236
-    holdTime: 0.1422224
+    timeStamp: 6.0106664
+    holdTime: 0.17066717
   - buttonType: 1
     buttonId: 7
-    timeStamp: 5.034646
-    holdTime: 0.14222193
+    timeStamp: 6.380444
+    holdTime: 0.14222288
   - buttonType: 2
     buttonId: 8
-    timeStamp: 5.404424
-    holdTime: 0.14222193
+    timeStamp: 6.778667
+    holdTime: 0.17066622
   - buttonType: 3
     buttonId: 9
-    timeStamp: 5.7457576
+    timeStamp: 7.1484447
     holdTime: 0.14222193
   - buttonType: 2
     buttonId: 10
-    timeStamp: 6.371535
-    holdTime: 0.1422224
+    timeStamp: 7.5182223
+    holdTime: 0.19911098
   - buttonType: 1
     buttonId: 11
-    timeStamp: 6.7413125
-    holdTime: 0.085333824
+    timeStamp: 8.087111
+    holdTime: 0.14222145
   - buttonType: 0
     buttonId: 12
-    timeStamp: 7.082646
-    holdTime: 0.113778114
+    timeStamp: 8.456889
+    holdTime: 0.1706667
   - buttonType: 1
     buttonId: 13
-    timeStamp: 7.509313
-    holdTime: 0.14222193
-  - buttonType: 2
-    buttonId: 14
-    timeStamp: 7.879091
-    holdTime: 0.17066622
-  - buttonType: 3
-    buttonId: 15
-    timeStamp: 8.248868
-    holdTime: 0.1422224
-  - buttonType: 2
-    buttonId: 16
-    timeStamp: 8.7039795
-    holdTime: 0.085333824
-  - buttonType: 1
-    buttonId: 17
-    timeStamp: 9.329757
-    holdTime: 0.113778114
-  - buttonType: 0
-    buttonId: 18
-    timeStamp: 9.699534
-    holdTime: 0.17066765
-  - buttonType: 1
-    buttonId: 19
-    timeStamp: 10.126202
-    holdTime: 0.1422224
-  - buttonType: 2
-    buttonId: 20
-    timeStamp: 10.524424
-    holdTime: 0.113778114
-  - buttonType: 3
-    buttonId: 21
-    timeStamp: 10.837314
-    holdTime: 0.11377716
-  - buttonType: 2
-    buttonId: 22
-    timeStamp: 11.207091
-    holdTime: 0.14222145
-  - buttonType: 1
-    buttonId: 23
-    timeStamp: 11.605312
-    holdTime: 0.085333824
-  - buttonType: 0
-    buttonId: 24
-    timeStamp: 12.316424
-    holdTime: 0.11377716
-  - buttonType: 1
-    buttonId: 25
-    timeStamp: 12.714646
-    holdTime: 0.08533287
-  - buttonType: 2
-    buttonId: 26
-    timeStamp: 13.0275345
-    holdTime: 0.113778114
-  - buttonType: 3
-    buttonId: 27
-    timeStamp: 13.368869
-    holdTime: 0.11377716
-  - buttonType: 2
-    buttonId: 28
-    timeStamp: 13.767091
-    holdTime: 0.1422224
-  - buttonType: 1
-    buttonId: 29
-    timeStamp: 14.108424
-    holdTime: 0.08533287
-  - buttonType: 0
-    buttonId: 30
-    timeStamp: 14.53509
-    holdTime: 0.14222145
-  - buttonType: 1
-    buttonId: 31
-    timeStamp: 15.274646
-    holdTime: 0.113778114
-  - buttonType: 2
-    buttonId: 32
-    timeStamp: 15.615979
-    holdTime: 0.085333824
-  - buttonType: 3
-    buttonId: 33
-    timeStamp: 15.957313
-    holdTime: 0.113778114
-  songPositionInBeats: -20
+    timeStamp: 8.883555
+    holdTime: 0.1706667
   notePrefab: {fileID: 8045660437492576465, guid: cdfbcc3d348f6f44c9fdbeb3c1232625, type: 3}
   noteParent: {fileID: 268579027}
   noteCanvasButtons:
@@ -2030,6 +2087,7 @@ MonoBehaviour:
   - {fileID: 143792975}
   - {fileID: 1883161762}
   judgementLine: {fileID: 120650873}
+  timer: {fileID: 132607129}
 --- !u!4 &2035386120
 Transform:
   m_ObjectHideFlags: 0

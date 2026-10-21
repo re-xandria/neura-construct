@@ -1,8 +1,8 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
-using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
@@ -11,12 +11,9 @@ public class LevelManager : MonoBehaviour
 
     public List<NoteData> NoteList = new List<NoteData>();
     private List<Transform> spawnedNotesToPlay = new List<Transform>();
+    private List<float> previousNoteY = new List<float>();
+    private List<bool> crossingLogged = new List<bool>();
 
-    // conductorController.songPosition for currSong position in seconds
-    // conductorController.dspSongTime for song start time in seconds
-
-    public float startTime { get; private set; }
-    public float songPositionInBeats;
     private LevelData levelData = new LevelData();
     private string path => "D:/Unity Games/neura-construct/Assets/Scripts/Data/data.json";
 
@@ -26,17 +23,20 @@ public class LevelManager : MonoBehaviour
 
     private Vector3 spawnPos = new Vector3(0, 1000, 0); // pos to spawn the beats
     private float spawnBeat; // beat we start spawning notes
+    private float previousBeat;
 
     public GameObject judgementLine;
+    public GameObject timer;
 
 
     void Start()
     {
-        startTime = (float)conductorController.dspSongTime;
-        songPositionInBeats = conductorController.songPositionInBeats;
-        spawnBeat = songPositionInBeats;
-        if (conductorController && conductorController.playGame) PopulateStoredNotes();
         if (!conductorController) conductorController = ConductorController.Instance;
+        if (!conductorController) return;
+
+        spawnBeat = conductorController.songPositionInBeats;
+        previousBeat = GetCurrentBeat();
+        if (conductorController.playGame) PopulateStoredNotes();
     }
 
     private void PopulateStoredNotes()
@@ -47,32 +47,59 @@ public class LevelManager : MonoBehaviour
         {
             NoteData ndata = NoteList[i];
             Transform noteClone = Instantiate(notePrefab, noteParent);
-            noteClone.transform.position = noteCanvasButtons[(int)ndata.buttonType].position; // look into this line
+            Vector3 lanePosition = noteCanvasButtons[(int)ndata.buttonType].position;
+            noteClone.position = lanePosition + spawnPos;
             spawnedNotesToPlay.Add(noteClone);
+            previousNoteY.Add(noteClone.position.y);
+            crossingLogged.Add(false);
         }
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        float currBeat = Mathf.FloorToInt(conductorController.songPositionInBeats);
+        if (!conductorController || !judgementLine) return;
 
-        // calc the progress mathf using inverse lerp from spawn beat, target beat which is timeStamp, and songPositionInBeats)
-        // translate position using vector3 lerp, using spawnPos, pos of judgementLine, and progress
-        // find a way to make better later without using lerp
-
-        // translate the note such that it reaches the judgement line at the spawn beat
-        // we need to delay the song starting for a few seconds to let the initial beats spawn as expected
-
-        // notes are very choppy and likely not reaching the judegement line at the right time
+        float currentBeat = GetCurrentBeat();
+        timer.GetComponent<TextMeshProUGUI>().text = $"{currentBeat}";
 
         if (spawnedNotesToPlay.Count > 0)
             for (int i = 0; i < spawnedNotesToPlay.Count; i++)
             {
-                float targetBeat = NoteList[i].timeStamp;
-                float progress = Mathf.InverseLerp(spawnBeat, targetBeat, currBeat);
-                spawnedNotesToPlay[i].position = Vector3.Lerp(noteCanvasButtons[(int)NoteList[i].buttonType].position + spawnPos, judgementLine.transform.position, progress); // look into this line
-                print($"Note {i} | Pos {spawnedNotesToPlay[i].position} | Target beat {targetBeat} | Progess {progress}");
+                NoteData noteData = NoteList[i];
+                float targetBeat = noteData.timeStamp;
+                float progress = targetBeat <= spawnBeat
+                    ? 1f
+                    : Mathf.InverseLerp(spawnBeat, targetBeat, currentBeat);
+                Vector3 lanePosition = noteCanvasButtons[(int)noteData.buttonType].position;
+                Vector3 spawnPosition = lanePosition + spawnPos;
+                Vector3 targetPosition = new Vector3(
+                    lanePosition.x,
+                    judgementLine.transform.position.y,
+                    lanePosition.z);
+                float oldY = previousNoteY[i];
+                spawnedNotesToPlay[i].position = Vector3.Lerp(
+                    spawnPosition,
+                    targetPosition,
+                    progress);
+
+                float currentY = spawnedNotesToPlay[i].position.y;
+                float lineY = judgementLine.transform.position.y;
+                if (!crossingLogged[i] && oldY > lineY && currentY <= lineY)
+                {
+                    float crossingFraction = (oldY - lineY) / (oldY - currentY);
+                    float crossingBeat = Mathf.Lerp(previousBeat, currentBeat, crossingFraction);
+                    Debug.Log(
+                        $"Note crossing | index={i} | timestamp={targetBeat:F4} beats | " +
+                        $"crossingBeat={crossingBeat:F4} | error={crossingBeat - targetBeat:+0.0000;-0.0000;0.0000} beats | " +
+                        $"currentBeat={currentBeat:F4} | frame={Time.frameCount} | " +
+                        $"noteY={currentY:F3} | lineY={lineY:F3} | BPM={conductorController.songBpm:F2} | " +
+                        $"notePosition={spawnedNotesToPlay[i].position}");
+                    crossingLogged[i] = true;
+                }
+                previousNoteY[i] = currentY;
             }
+
+        previousBeat = currentBeat;
     }
 
     public void StoreNoteData(NoteData _newNote)
@@ -87,6 +114,11 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    private float GetCurrentBeat()
+    {
+        return conductorController.GetSongPositionInBeats();
+    }
+
 
     // cannot attach parameterized function to game object, attaching as event listener
     public void saveButtonData(int buttonId, KeyCode keyCode)
@@ -94,7 +126,7 @@ public class LevelManager : MonoBehaviour
         ButtonData press = new ButtonData
         {
             buttonId = buttonId,
-            beatPressed = songPositionInBeats,
+            beatPressed = GetCurrentBeat(),
             keyPressed = keyCode
         };
 

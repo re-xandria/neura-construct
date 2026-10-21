@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,17 +32,25 @@ public class ButtonController : MonoBehaviour
             _button.onClick.Invoke();
             image.color = Color.coral;
 
-            currentNote = new NoteData((NoteData.BUTTONTYPE)buttonId, levelManager.NoteList.Count, conductorController.songPositionInBeats);
+            currentNote = new NoteData(
+                (NoteData.BUTTONTYPE)buttonId,
+                levelManager.NoteList.Count,
+                GetCurrentBeat());
         }
 
         if (Input.GetKeyUp(_Key))
         {
             image.color = Color.white;
 
-            if (currentNote != null) currentNote.holdTime = conductorController.songPositionInBeats - currentNote.timeStamp;
+            if (currentNote != null) currentNote.holdTime = GetCurrentBeat() - currentNote.timeStamp;
             levelManager.StoreNoteData(currentNote);
             currentNote = null;
         }
+    }
+
+    private float GetCurrentBeat()
+    {
+        return conductorController.GetSongPositionInBeats();
     }
 
 }
@@ -55,7 +62,7 @@ public class NoteData
     public enum BUTTONTYPE { One, Two, Three, Four}
     public BUTTONTYPE buttonType; // the type of button (either shape, or location)
     public int buttonId; // the number this button is along the total number of buttons in the list
-    public float timeStamp; // when this button was pressed from start
+    public float timeStamp; // Beat at which the button was pressed, relative to song start.
     public float holdTime; // leave at zero if you just press, but if hold, then say how long to hold for (counts on release)
 
     public NoteData(BUTTONTYPE _btnType, int _btnId, float _timeStmp, float _holdTime = 0)
@@ -67,4 +74,3 @@ public class NoteData
     }
 
 }
-

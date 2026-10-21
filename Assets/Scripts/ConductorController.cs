@@ -26,6 +26,9 @@ public class ConductorController : MonoBehaviour
     //How many seconds have passed since the song started
     public double dspSongTime;
 
+    private bool songStarted;
+    private bool songRunning;
+
     //an AudioSource attached to this GameObject that will play the music.
     public AudioSource musicSource;
 
@@ -40,6 +43,7 @@ public class ConductorController : MonoBehaviour
         if (Instance != null && Instance != this) Destroy(this);
         else Instance = this;
 
+        if (musicSource) musicSource.Stop();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -49,11 +53,7 @@ public class ConductorController : MonoBehaviour
         //Calculate the number of seconds in each beat
         secPerBeat = 60f / songBpm;
 
-        //Record the time when the music starts
-        dspSongTime = (float)AudioSettings.dspTime;
-
-        //Start the music
-        musicSource.Play();
+        if (playGame) StartSong();
 
     }
 
@@ -62,10 +62,10 @@ public class ConductorController : MonoBehaviour
     {
         if (recordAudio || playGame)
         {
-            if (musicSource.isPlaying == false) musicSource.UnPause();
+            if (!songRunning) StartSong();
 
             //determine how many seconds since the song started
-            songPosition = (float)(AudioSettings.dspTime - dspSongTime);
+            songPosition = GetSongPositionSeconds();
 
             //determine how many beats since the song started
             songPositionInBeats = songPosition / secPerBeat;
@@ -85,14 +85,64 @@ public class ConductorController : MonoBehaviour
         }
         else
         {
-            if (musicSource.isPlaying) musicSource.Pause();
+            if (songRunning)
+            {
+                songPosition = GetSongPositionSeconds();
+                songPositionInBeats = songPosition / secPerBeat;
+                musicSource.Pause();
+                songRunning = false;
+            }
         }
 
     }
 
     public void ToggleRecord()
     {
+        if (playGame) return;
+
         recordAudio = !recordAudio;
+
+        if (recordAudio)
+        {
+            StartSong();
+        }
+        else if (songRunning)
+        {
+            songPosition = GetSongPositionSeconds();
+            songPositionInBeats = songPosition / secPerBeat;
+            musicSource.Pause();
+            songRunning = false;
+        }
+    }
+
+    private void StartSong()
+    {
+        if (songRunning || !musicSource) return;
+
+        if (songStarted)
+        {
+            dspSongTime = AudioSettings.dspTime - songPosition;
+            musicSource.UnPause();
+        }
+        else
+        {
+            dspSongTime = AudioSettings.dspTime + 0.1;
+            musicSource.PlayScheduled(dspSongTime);
+            songStarted = true;
+        }
+
+        songRunning = true;
+    }
+
+    public float GetSongPositionInBeats()
+    {
+        return GetSongPositionSeconds() / secPerBeat;
+    }
+
+    private float GetSongPositionSeconds()
+    {
+        if (!songRunning) return songPosition;
+        return Mathf.Max(0f, (float)(AudioSettings.dspTime - dspSongTime));
     }
 
 }
