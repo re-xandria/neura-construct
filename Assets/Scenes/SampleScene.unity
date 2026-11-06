@@ -182,7 +182,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 100
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a274bdc76095cb54b9fb50a0c8ec64dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  buttonId: 2
+  buttonType: 2
   _Key: 100
   levelManager: {fileID: 2035386119}
   conductorController: {fileID: 1235006566}
@@ -642,7 +642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a274bdc76095cb54b9fb50a0c8ec64dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  buttonId: 0
+  buttonType: 0
   _Key: 97
   levelManager: {fileID: 2035386119}
   conductorController: {fileID: 1235006566}
@@ -1431,7 +1431,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -268, y: 196}
+  m_AnchoredPosition: {x: -268, y: 178}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1423249302
@@ -1745,7 +1745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a274bdc76095cb54b9fb50a0c8ec64dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  buttonId: 1
+  buttonType: 1
   _Key: 115
   levelManager: {fileID: 2035386119}
   conductorController: {fileID: 1235006566}
@@ -1882,7 +1882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a274bdc76095cb54b9fb50a0c8ec64dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  buttonId: 3
+  buttonType: 3
   _Key: 102
   levelManager: {fileID: 2035386119}
   conductorController: {fileID: 1235006566}
@@ -2027,58 +2027,86 @@ MonoBehaviour:
     buttonId: 0
     timeStamp: 3.479111
     holdTime: 0.25600028
+    playerPressedAt: 0
+    isColliding: 0
   - buttonType: 1
     buttonId: 1
     timeStamp: 3.8204443
     holdTime: 0.19911122
+    playerPressedAt: 0
+    isColliding: 0
   - buttonType: 2
     buttonId: 2
     timeStamp: 4.161778
     holdTime: 0.25599957
+    playerPressedAt: 0
+    isColliding: 0
   - buttonType: 3
     buttonId: 3
     timeStamp: 4.5315557
     holdTime: 0.39822197
+    playerPressedAt: 0
+    isColliding: 0
   - buttonType: 2
     buttonId: 4
     timeStamp: 5.2142224
     holdTime: 0.22755527
+    playerPressedAt: 0
+    isColliding: 0
   - buttonType: 1
     buttonId: 5
     timeStamp: 5.669333
     holdTime: 0.19911146
+    playerPressedAt: 0
+    isColliding: 0
   - buttonType: 0
     buttonId: 6
     timeStamp: 6.0106664
     holdTime: 0.17066717
+    playerPressedAt: 0
+    isColliding: 0
   - buttonType: 1
     buttonId: 7
     timeStamp: 6.380444
     holdTime: 0.14222288
+    playerPressedAt: 0
+    isColliding: 0
   - buttonType: 2
     buttonId: 8
     timeStamp: 6.778667
     holdTime: 0.17066622
+    playerPressedAt: 0
+    isColliding: 0
   - buttonType: 3
     buttonId: 9
     timeStamp: 7.1484447
     holdTime: 0.14222193
+    playerPressedAt: 0
+    isColliding: 0
   - buttonType: 2
     buttonId: 10
     timeStamp: 7.5182223
     holdTime: 0.19911098
+    playerPressedAt: 0
+    isColliding: 0
   - buttonType: 1
     buttonId: 11
     timeStamp: 8.087111
     holdTime: 0.14222145
+    playerPressedAt: 0
+    isColliding: 0
   - buttonType: 0
     buttonId: 12
     timeStamp: 8.456889
     holdTime: 0.1706667
+    playerPressedAt: 0
+    isColliding: 0
   - buttonType: 1
     buttonId: 13
     timeStamp: 8.883555
     holdTime: 0.1706667
+    playerPressedAt: 0
+    isColliding: 0
   notePrefab: {fileID: 8045660437492576465, guid: cdfbcc3d348f6f44c9fdbeb3c1232625, type: 3}
   noteParent: {fileID: 268579027}
   noteCanvasButtons:

@@ -88,12 +88,12 @@ public class LevelManager : MonoBehaviour
                 {
                     float crossingFraction = (oldY - lineY) / (oldY - currentY);
                     float crossingBeat = Mathf.Lerp(previousBeat, currentBeat, crossingFraction);
-                    Debug.Log(
-                        $"Note crossing | index={i} | timestamp={targetBeat:F4} beats | " +
-                        $"crossingBeat={crossingBeat:F4} | error={crossingBeat - targetBeat:+0.0000;-0.0000;0.0000} beats | " +
-                        $"currentBeat={currentBeat:F4} | frame={Time.frameCount} | " +
-                        $"noteY={currentY:F3} | lineY={lineY:F3} | BPM={conductorController.songBpm:F2} | " +
-                        $"notePosition={spawnedNotesToPlay[i].position}");
+                    // Debug.Log(
+                    //     $"Note crossing | index={i} | timestamp={targetBeat:F4} beats | " +
+                    //     $"crossingBeat={crossingBeat:F4} | error={crossingBeat - targetBeat:+0.0000;-0.0000;0.0000} beats | " +
+                    //     $"currentBeat={currentBeat:F4} | frame={Time.frameCount} | " +
+                    //     $"noteY={currentY:F3} | lineY={lineY:F3} | BPM={conductorController.songBpm:F2} | " +
+                    //     $"notePosition={spawnedNotesToPlay[i].position}");
                     crossingLogged[i] = true;
                 }
                 previousNoteY[i] = currentY;
@@ -119,27 +119,26 @@ public class LevelManager : MonoBehaviour
         return conductorController.GetSongPositionInBeats();
     }
 
-
     // cannot attach parameterized function to game object, attaching as event listener
-    public void saveButtonData(int buttonId, KeyCode keyCode)
-    {
-        ButtonData press = new ButtonData
-        {
-            buttonId = buttonId,
-            beatPressed = GetCurrentBeat(),
-            keyPressed = keyCode
-        };
+    // public void saveButtonData(int buttonId, KeyCode keyCode)
+    // {
+    //     ButtonData press = new ButtonData
+    //     {
+    //         buttonId = buttonId,
+    //         beatPressed = GetCurrentBeat(),
+    //         keyPressed = keyCode
+    //     };
 
-        levelData.buttonData.Add(press);
-        print($"Button Pressed! Button ID: {press.buttonId} | Key Pressed: {press.keyPressed} | Beat Pressed On: {press.beatPressed}");
-    }
+    //     levelData.buttonData.Add(press);
+    //     print($"Button Pressed! Button ID: {press.buttonId} | Key Pressed: {press.keyPressed} | Beat Pressed On: {press.beatPressed}");
+    // }
 
-    void OnApplicationQuit()
-    {
-        string json = JsonUtility.ToJson(levelData);
-        print($"JSON: {json}");
-        print(path);
-        File.WriteAllText(path, json);
-    }
+    // void OnApplicationQuit()
+    // {
+    //     string json = JsonUtility.ToJson(levelData);
+    //     print($"JSON: {json}");
+    //     print(path);
+    //     File.WriteAllText(path, json);
+    // }
 
 }
