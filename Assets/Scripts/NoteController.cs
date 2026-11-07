@@ -1,5 +1,3 @@
-using System;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public class NoteController : MonoBehaviour
@@ -14,16 +12,19 @@ public class NoteController : MonoBehaviour
 
     public ConductorController conductorController;
     public GameObject judgementLine;
-    public GameObject destroyLine;
 
     public bool legacyNotebehavior;
 
     private ConductorController _ConductorController;
 
-    public GameObject button1;
-    public GameObject button2;
-    public GameObject button3;
-    public GameObject button4;
+    private Transform laneButton;
+    private NoteData.BUTTONTYPE laneType;
+
+    public void InitializeLane(NoteData.BUTTONTYPE type, Transform buttonTransform)
+    {
+        laneType = type;
+        laneButton = buttonTransform;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -81,32 +82,11 @@ public class NoteController : MonoBehaviour
 
     }
 
-    NoteData.BUTTONTYPE GetButtonType()
+    void OnCollisionStay2D(Collision2D button)
     {
-        const float noteXPos = this.transform.position.x;
-        switch (noteXPos)
-        {
-            case button1.transform.position.x:
-                return NoteData.BUTTONTYPE.One;
-            case button2.transform.position.x:
-                return NoteData.BUTTONTYPE.Two;
-            case button3.transform.position.x:
-                return NoteData.BUTTONTYPE.Three;
-            case button4.transform.position.x:
-                return NoteData.BUTTONTYPE.Four;
-            default:
-                Debug.LogError($"Note is not aligned with any button.");
-                return NoteData.BUTTONTYPE.One; // Return a default value
-        }
-    }
+        ButtonController collidedButton = button.collider.GetComponentInParent<ButtonController>();
+        if (!collidedButton) return;
 
-    void OnTriggerEnter(Collider button)
-    {
-        NoteData.BUTTONTYPE buttonType = GetButtonType();
-        // determine button type based on x position of note
-        if (button.collider.buttonType == buttonType) 
-        {
-            Debug.Log($"Note collided with button {button.collider.buttonType}");
-        }
+        Debug.Log("Colliding with button " + laneButton);
     }
 }

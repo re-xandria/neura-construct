@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 4074945632061206930}
   - component: {fileID: 1050126393053109087}
   - component: {fileID: 5982909931405262385}
-  - component: {fileID: 7016660210105159417}
+  - component: {fileID: 9078055184361954503}
+  - component: {fileID: 5400682412914589434}
   m_Layer: 5
   m_Name: NotePrefab
   m_TagString: Untagged
@@ -92,9 +93,48 @@ MonoBehaviour:
   targetBeat: 15
   conductorController: {fileID: 0}
   judgementLine: {fileID: 0}
-  destroyLine: {fileID: 0}
   legacyNotebehavior: 0
---- !u!50 &7016660210105159417
+  button1: {fileID: 2124059483565152822, guid: d531f5513da3849ba8599d6178e18eac, type: 3}
+  button2: {fileID: 3232881871239783963, guid: 8a06f474b4a6345dbb6561006c7d62ce, type: 3}
+  button3: {fileID: 7198706568449706169, guid: 81d68476acef741528558998c9116d98, type: 3}
+  button4: {fileID: 8106161780791880877, guid: ecb39fe14702f44729d5199b20c1e214, type: 3}
+--- !u!58 &9078055184361954503
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3430592634084633020}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 50
+--- !u!50 &5400682412914589434
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0

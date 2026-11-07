@@ -46,9 +46,12 @@ public class LevelManager : MonoBehaviour
         for (int i = 0; i < NoteList.Count; i++)
         {
             NoteData ndata = NoteList[i];
+            Transform laneButton = noteCanvasButtons[(int)ndata.buttonType];
             Transform noteClone = Instantiate(notePrefab, noteParent);
-            Vector3 lanePosition = noteCanvasButtons[(int)ndata.buttonType].position;
+            Vector3 lanePosition = laneButton.position;
             noteClone.position = lanePosition + spawnPos;
+            NoteController noteController = noteClone.GetComponent<NoteController>();
+            if (noteController) noteController.InitializeLane(ndata.buttonType, laneButton);
             spawnedNotesToPlay.Add(noteClone);
             previousNoteY.Add(noteClone.position.y);
             crossingLogged.Add(false);
@@ -81,6 +84,11 @@ public class LevelManager : MonoBehaviour
                     spawnPosition,
                     targetPosition,
                     progress);
+                // Debug.Log(
+                //     $"Note placement | frame={Time.frameCount} | noteIndex={i} | " +
+                //     $"buttonType={noteData.buttonType} | " +
+                //     $"laneButton={noteCanvasButtons[(int)noteData.buttonType].name} | " +
+                //     $"laneX={lanePosition.x:F3} | noteX={spawnedNotesToPlay[i].position.x:F3}");
 
                 float currentY = spawnedNotesToPlay[i].position.y;
                 float lineY = judgementLine.transform.position.y;
