@@ -29,56 +29,12 @@ public class NoteController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // if (ConductorController.Instance) _ConductorController = ConductorController.Instance;
-
-        // if (!legacyNotebehavior) return;
-
-        // spawnPosition = transform.position;
-        // spawnBeat = conductorController.songPositionInBeats;
-        // travelBeats = targetBeat - spawnBeat;
-        // destroyBeat = travelBeats + 15;
-
-        // if (travelBeats <= 0f)
-        // {
-        //     Debug.LogError($"Note targetBeat must be after its spawn beat. Spawn: {spawnBeat}, target: {targetBeat}");
-        //     enabled = false;
-        // }
 
     }
 
     // Update is called once per frame
-    void FixedUpdate() // each note should be handled
+    void FixedUpdate() 
     {
-        // if (legacyNotebehavior)
-        // {
-        //     float currBeat = Mathf.FloorToInt(conductorController.songPositionInBeats);
-
-        //     if (transform.position.y > judgementLine.transform.position.y)
-        //     {
-        //         float progress = Mathf.InverseLerp(spawnBeat, targetBeat, currBeat);
-
-        //         transform.position = Vector3.Lerp(
-        //             spawnPosition,
-        //             judgementLine.transform.position,
-        //             progress
-        //         );
-        //     }
-        //     else
-        //     {
-        //         float progress = Mathf.InverseLerp(targetBeat, destroyBeat, currBeat);
-
-        //         transform.position = Vector3.Lerp(
-        //             judgementLine.transform.position,
-        //             destroyLine.transform.position,
-        //             progress
-        //         );
-        //     }
-        // }
-        // else
-        // {
-        //     // we'll do this from the manager
-        //     // transform.Translate(Vector3.down * (_ConductorController.secPerBeat * _ConductorController.songBpm/10));
-        // }
 
     }
 

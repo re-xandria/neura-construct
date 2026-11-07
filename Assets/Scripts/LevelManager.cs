@@ -127,26 +127,4 @@ public class LevelManager : MonoBehaviour
         return conductorController.GetSongPositionInBeats();
     }
 
-    // cannot attach parameterized function to game object, attaching as event listener
-    // public void saveButtonData(int buttonId, KeyCode keyCode)
-    // {
-    //     ButtonData press = new ButtonData
-    //     {
-    //         buttonId = buttonId,
-    //         beatPressed = GetCurrentBeat(),
-    //         keyPressed = keyCode
-    //     };
-
-    //     levelData.buttonData.Add(press);
-    //     print($"Button Pressed! Button ID: {press.buttonId} | Key Pressed: {press.keyPressed} | Beat Pressed On: {press.beatPressed}");
-    // }
-
-    // void OnApplicationQuit()
-    // {
-    //     string json = JsonUtility.ToJson(levelData);
-    //     print($"JSON: {json}");
-    //     print(path);
-    //     File.WriteAllText(path, json);
-    // }
-
 }
