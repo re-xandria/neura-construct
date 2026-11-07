@@ -82,7 +82,7 @@ public class NoteController : MonoBehaviour
 
     }
 
-    void OnCollisionStay2D(Collision2D button)
+    void OnCollisionEnter2D(Collision2D button)
     {
         ButtonController collidedButton = button.collider.GetComponentInParent<ButtonController>();
         if (!collidedButton) return;
