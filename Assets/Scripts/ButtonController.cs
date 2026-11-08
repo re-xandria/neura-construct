@@ -8,6 +8,7 @@ public class ButtonController : MonoBehaviour
     public KeyCode _Key;
     public LevelManager levelManager;
     public ConductorController conductorController;
+    private NoteController noteController;
 
     private Button _button;
     private Image image;
@@ -19,32 +20,35 @@ public class ButtonController : MonoBehaviour
     {
         _button = GetComponent<Button>();
         image = GetComponent<Image>();
-        // add eventlistener here
-        // _button.onClick.AddListener(() => levelManager.saveButtonData(buttonId, _Key));
     }
-    
+
 
     void Update()
     {
         if (Input.GetKeyDown(_Key))
         {
             // If we attach an onClick function to button it will be invoked
-            _button.onClick.Invoke();
             image.color = Color.coral;
 
-            currentNote = new NoteData(
-                buttonType,
-                levelManager.NoteList.Count,
-                GetCurrentBeat());
+            if (conductorController.recordAudio)
+            {
+                currentNote = new NoteData(
+                    buttonType,
+                    levelManager.NoteList.Count,
+                    GetCurrentBeat());
+            }
         }
 
         if (Input.GetKeyUp(_Key))
         {
             image.color = Color.white;
 
-            if (currentNote != null) currentNote.holdTime = GetCurrentBeat() - currentNote.timeStamp;
-            levelManager.StoreNoteData(currentNote);
-            currentNote = null;
+            if (conductorController.recordAudio)
+            {
+                if (currentNote != null) currentNote.holdTime = GetCurrentBeat() - currentNote.timeStamp;
+                levelManager.StoreNoteData(currentNote);
+                currentNote = null;
+            }
         }
     }
 
@@ -53,17 +57,17 @@ public class ButtonController : MonoBehaviour
         return conductorController.GetSongPositionInBeats();
     }
 
-    public void handleButtonPress(NoteData noteData) 
+    public void HandleButtonPress(NoteData ndata)
     {
-        noteData.playerPressedAt = GetCurrentBeat();
-        toggleCollision(noteData);
-        return;
-    }
-
-    public void toggleCollision(NoteData noteData)
-    {
-        noteData.isColliding = !noteData.isColliding;
-        return;
+        if (ndata != null && ndata.isColliding && Input.GetKey(_Key))
+        {
+            ndata.playerPressedAt = conductorController.GetSongPositionInBeats();
+            Debug.Log($"Player Pressed At: " + ndata.playerPressedAt);
+            // update score before destroying
+            ndata.isColliding = false;
+            levelManager.DeleteNote(ndata);
+            return;
+        }
     }
 
 }
@@ -72,18 +76,18 @@ public class ButtonController : MonoBehaviour
 [System.Serializable]
 public class NoteData
 {
-    public enum BUTTONTYPE { One, Two, Three, Four}
+    public enum BUTTONTYPE { One, Two, Three, Four }
     public BUTTONTYPE buttonType; // the type of button (either shape, or location)
-    public int buttonId; // the number this button is along the total number of buttons in the list
+    public int noteId; // the number this button is along the total number of buttons in the list
     public float timeStamp; // Beat at which the button was pressed, relative to song start.
     public float holdTime; // leave at zero if you just press, but if hold, then say how long to hold for (counts on release)
     public float playerPressedAt; // Beat at which the player pressed the button, relative to song start.
     public bool isColliding; // Whether the note is currently colliding with the button.
 
-    public NoteData(BUTTONTYPE _btnType, int _btnId, float _timeStmp, float _holdTime = 0, float _playerPressedAt = 0, bool _isCol = false)
+    public NoteData(BUTTONTYPE _btnType, int _noteId, float _timeStmp, float _holdTime = 0, float _playerPressedAt = 0, bool _isCol = false)
     {
         buttonType = _btnType;
-        buttonId = _btnId;
+        noteId = _noteId;
         timeStamp = _timeStmp;
         holdTime = _holdTime;
         playerPressedAt = _playerPressedAt;

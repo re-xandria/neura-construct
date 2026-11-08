@@ -15,7 +15,6 @@ public class LevelManager : MonoBehaviour
     private List<bool> crossingLogged = new List<bool>();
 
     private LevelData levelData = new LevelData();
-    private string path => "D:/Unity Games/neura-construct/Assets/Scripts/Data/data.json";
 
     public Transform notePrefab; // the prefab to spawn that reflects the note for players
     public Transform noteParent; // where to spawn the notes under
@@ -28,6 +27,7 @@ public class LevelManager : MonoBehaviour
     public GameObject judgementLine;
     public GameObject timer;
 
+    private float delayTime = 2f;
 
     void Start()
     {
@@ -51,7 +51,7 @@ public class LevelManager : MonoBehaviour
             Vector3 lanePosition = laneButton.position;
             noteClone.position = lanePosition + spawnPos;
             NoteController noteController = noteClone.GetComponent<NoteController>();
-            if (noteController) noteController.InitializeLane(ndata.buttonType, laneButton);
+            if (noteController) noteController.InitializeLane(ndata, laneButton);
             spawnedNotesToPlay.Add(noteClone);
             previousNoteY.Add(noteClone.position.y);
             crossingLogged.Add(false);
@@ -65,46 +65,56 @@ public class LevelManager : MonoBehaviour
         float currentBeat = GetCurrentBeat();
         timer.GetComponent<TextMeshProUGUI>().text = $"{currentBeat}";
 
+
         if (spawnedNotesToPlay.Count > 0)
             for (int i = 0; i < spawnedNotesToPlay.Count; i++)
             {
                 NoteData noteData = NoteList[i];
-                float targetBeat = noteData.timeStamp;
-                float progress = targetBeat <= spawnBeat
-                    ? 1f
-                    : Mathf.InverseLerp(spawnBeat, targetBeat, currentBeat);
-                Vector3 lanePosition = noteCanvasButtons[(int)noteData.buttonType].position;
-                Vector3 spawnPosition = lanePosition + spawnPos;
-                Vector3 targetPosition = new Vector3(
-                    lanePosition.x,
-                    judgementLine.transform.position.y,
-                    lanePosition.z);
-                float oldY = previousNoteY[i];
-                spawnedNotesToPlay[i].position = Vector3.Lerp(
-                    spawnPosition,
-                    targetPosition,
-                    progress);
-                // Debug.Log(
-                //     $"Note placement | frame={Time.frameCount} | noteIndex={i} | " +
-                //     $"buttonType={noteData.buttonType} | " +
-                //     $"laneButton={noteCanvasButtons[(int)noteData.buttonType].name} | " +
-                //     $"laneX={lanePosition.x:F3} | noteX={spawnedNotesToPlay[i].position.x:F3}");
 
-                float currentY = spawnedNotesToPlay[i].position.y;
-                float lineY = judgementLine.transform.position.y;
-                if (!crossingLogged[i] && oldY > lineY && currentY <= lineY)
+                if (crossingLogged[i] && currentBeat >= noteData.timeStamp + delayTime)
                 {
-                    float crossingFraction = (oldY - lineY) / (oldY - currentY);
-                    float crossingBeat = Mathf.Lerp(previousBeat, currentBeat, crossingFraction);
-                    // Debug.Log(
-                    //     $"Note crossing | index={i} | timestamp={targetBeat:F4} beats | " +
-                    //     $"crossingBeat={crossingBeat:F4} | error={crossingBeat - targetBeat:+0.0000;-0.0000;0.0000} beats | " +
-                    //     $"currentBeat={currentBeat:F4} | frame={Time.frameCount} | " +
-                    //     $"noteY={currentY:F3} | lineY={lineY:F3} | BPM={conductorController.songBpm:F2} | " +
-                    //     $"notePosition={spawnedNotesToPlay[i].position}");
-                    crossingLogged[i] = true;
+                    DeleteNote(noteData);
                 }
-                previousNoteY[i] = currentY;
+                else
+                {
+                    float targetBeat = noteData.timeStamp;
+                    float progress = targetBeat <= spawnBeat
+                        ? 1f
+                        : Mathf.InverseLerp(spawnBeat, targetBeat, currentBeat);
+                    Vector3 lanePosition = noteCanvasButtons[(int)noteData.buttonType].position;
+                    Vector3 spawnPosition = lanePosition + spawnPos;
+                    Vector3 targetPosition = new Vector3(
+                        lanePosition.x,
+                        judgementLine.transform.position.y,
+                        lanePosition.z);
+                    float oldY = previousNoteY[i];
+                    spawnedNotesToPlay[i].position = Vector3.Lerp(
+                        spawnPosition,
+                        targetPosition,
+                        progress);
+                    // Debug.Log(
+                    //     $"Note placement | frame={Time.frameCount} | noteIndex={i} | " +
+                    //     $"buttonType={noteData.buttonType} | " +
+                    //     $"laneButton={noteCanvasButtons[(int)noteData.buttonType].name} | " +
+                    //     $"laneX={lanePosition.x:F3} | noteX={spawnedNotesToPlay[i].position.x:F3}");
+
+                    float currentY = spawnedNotesToPlay[i].position.y;
+                    float lineY = judgementLine.transform.position.y;
+                    if (oldY > lineY && currentY <= lineY)
+                    {
+                        float crossingFraction = (oldY - lineY) / (oldY - currentY);
+                        float crossingBeat = Mathf.Lerp(previousBeat, currentBeat, crossingFraction);
+                        // Debug.Log(
+                        //     $"Note crossing | index={i} | timestamp={targetBeat:F4} beats | " +
+                        //     $"crossingBeat={crossingBeat:F4} | error={crossingBeat - targetBeat:+0.0000;-0.0000;0.0000} beats | " +
+                        //     $"currentBeat={currentBeat:F4} | frame={Time.frameCount} | " +
+                        //     $"noteY={currentY:F3} | lineY={lineY:F3} | BPM={conductorController.songBpm:F2} | " +
+                        //     $"notePosition={spawnedNotesToPlay[i].position}");
+                        crossingLogged[i] = true;
+                    }
+                    previousNoteY[i] = currentY;
+                }
+
             }
 
         previousBeat = currentBeat;
@@ -125,6 +135,26 @@ public class LevelManager : MonoBehaviour
     private float GetCurrentBeat()
     {
         return conductorController.GetSongPositionInBeats();
+    }
+
+    public void DeleteNote(NoteData noteData)
+    {
+        int index = NoteList.IndexOf(noteData);
+        if (index >= 0)
+        {
+            Destroy(spawnedNotesToPlay[index].gameObject);
+            crossingLogged.RemoveAt(index);
+            previousNoteY.RemoveAt(index);
+            spawnedNotesToPlay.RemoveAt(index);
+            NoteList.RemoveAt(index);
+        }
+    }
+
+
+    public NoteController GetClone(int noteId)
+    {
+        if (spawnedNotesToPlay[noteId] != null) return spawnedNotesToPlay[noteId].GetComponent<NoteController>();
+        return (NoteController)null;
     }
 
 }

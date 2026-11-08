@@ -11,18 +11,17 @@ public class NoteController : MonoBehaviour
     private float destroyBeat;
 
     public ConductorController conductorController;
+    public LevelManager levelManager;
     public GameObject judgementLine;
 
     public bool legacyNotebehavior;
 
-    private ConductorController _ConductorController;
+    public Transform laneButton;
+    public NoteData ndata;
 
-    private Transform laneButton;
-    private NoteData.BUTTONTYPE laneType;
-
-    public void InitializeLane(NoteData.BUTTONTYPE type, Transform buttonTransform)
+    public void InitializeLane(NoteData noteData, Transform buttonTransform)
     {
-        laneType = type;
+        ndata = noteData;
         laneButton = buttonTransform;
     }
 
@@ -33,9 +32,8 @@ public class NoteController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate() 
+    void Update()
     {
-
     }
 
     void OnCollisionEnter2D(Collision2D button)
@@ -43,6 +41,13 @@ public class NoteController : MonoBehaviour
         ButtonController collidedButton = button.collider.GetComponentInParent<ButtonController>();
         if (!collidedButton) return;
 
-        Debug.Log("Colliding with button " + laneButton);
+        ndata.isColliding = true;
     }
+
+    void OnCollisionStay2D(Collision2D button)
+    {
+        ButtonController collidedButton = button.collider.GetComponentInParent<ButtonController>();
+        if (collidedButton != null) collidedButton.HandleButtonPress(ndata);
+    }
+
 }
