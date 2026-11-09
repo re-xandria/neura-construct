@@ -8,7 +8,7 @@ public class ButtonController : MonoBehaviour
     public KeyCode _Key;
     public LevelManager levelManager;
     public ConductorController conductorController;
-    private NoteController noteController;
+    public ScoreManager scoreManager;    
 
     private Button _button;
     private Image image;
@@ -63,7 +63,7 @@ public class ButtonController : MonoBehaviour
         {
             ndata.playerPressedAt = conductorController.GetSongPositionInBeats();
             Debug.Log($"Player Pressed At: " + ndata.playerPressedAt);
-            // update score before destroying
+            scoreManager.UpdateScore(ndata.playerPressedAt, ndata.timeStamp);
             ndata.isColliding = false;
             levelManager.DeleteNote(ndata);
             return;
