@@ -14,8 +14,6 @@ public class LevelManager : MonoBehaviour
     private List<float> previousNoteY = new List<float>();
     private List<bool> crossingLogged = new List<bool>();
 
-    private LevelData levelData = new LevelData();
-
     public Transform notePrefab; // the prefab to spawn that reflects the note for players
     public Transform noteParent; // where to spawn the notes under
     public List<Transform> noteCanvasButtons; // the buttons we can press
@@ -126,10 +124,6 @@ public class LevelManager : MonoBehaviour
 
         if (conductorController.recordAudio)
             NoteList.Add(_newNote);
-        else if (conductorController.playGame) // if we are playing notes
-        {
-            //compare note against stored ones
-        }
     }
 
     private float GetCurrentBeat()

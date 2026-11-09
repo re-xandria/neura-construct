@@ -14,8 +14,6 @@ public class ButtonController : MonoBehaviour
     private Image image;
     private NoteData currentNote;
 
-    // eventually update to the new input system
-
     void Start()
     {
         _button = GetComponent<Button>();
@@ -27,7 +25,6 @@ public class ButtonController : MonoBehaviour
     {
         if (Input.GetKeyDown(_Key))
         {
-            // If we attach an onClick function to button it will be invoked
             image.color = Color.coral;
 
             if (conductorController.recordAudio)
