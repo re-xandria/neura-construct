@@ -56,7 +56,11 @@ public class ButtonController : MonoBehaviour
 
     public void HandleButtonPress(NoteData ndata)
     {
-        if (ndata != null && ndata.isColliding && Input.GetKey(_Key))
+        // only delete the note with the lowest Y pos and same button id
+        // get all notes with the button id
+        // if note we are trying to delete is the note with lowest Y then proceed with button press
+
+        if (ndata != null && ndata.isColliding && Input.GetKey(_Key) && ndata.noteId == levelManager.NoteList[0].noteId)
         {
             ndata.playerPressedAt = conductorController.GetSongPositionInBeats();
             Debug.Log($"Player Pressed At: " + ndata.playerPressedAt);

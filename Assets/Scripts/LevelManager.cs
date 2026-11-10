@@ -25,7 +25,7 @@ public class LevelManager : MonoBehaviour
     public GameObject judgementLine;
     public GameObject timer;
 
-    private float delayTime = 2f;
+    private float delayTime = 1f;
 
     void Start()
     {
@@ -68,7 +68,6 @@ public class LevelManager : MonoBehaviour
             for (int i = 0; i < spawnedNotesToPlay.Count; i++)
             {
                 NoteData noteData = NoteList[i];
-
                 if (crossingLogged[i] && currentBeat >= noteData.timeStamp + delayTime)
                 {
                     DeleteNote(noteData);
