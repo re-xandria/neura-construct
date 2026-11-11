@@ -25,7 +25,7 @@ public class LevelManager : MonoBehaviour
     public GameObject judgementLine;
     public GameObject timer;
 
-    private float delayTime = 1f;
+    private float delayTime;
 
     void Start()
     {
@@ -34,6 +34,9 @@ public class LevelManager : MonoBehaviour
 
         spawnBeat = conductorController.songPositionInBeats;
         previousBeat = GetCurrentBeat();
+
+        delayTime = conductorController.secPerBeat;
+
         if (conductorController.playGame) PopulateStoredNotes();
     }
 
@@ -44,14 +47,14 @@ public class LevelManager : MonoBehaviour
         for (int i = 0; i < NoteList.Count; i++)
         {
             NoteData ndata = NoteList[i];
-            Transform laneButton = noteCanvasButtons[(int)ndata.buttonType];
-            Transform noteClone = Instantiate(notePrefab, noteParent);
-            Vector3 lanePosition = laneButton.position;
-            noteClone.position = lanePosition + spawnPos;
-            NoteController noteController = noteClone.GetComponent<NoteController>();
-            if (noteController) noteController.InitializeLane(ndata, laneButton);
+            Transform noteClone = null;
+            // Transform noteClone = Instantiate(notePrefab, noteParent);
+            // Vector3 lanePosition = laneButton.position;
+            // noteClone.position = lanePosition + spawnPos;
+            // NoteController noteController = noteClone.GetComponent<NoteController>();
+            // if (noteController) noteController.InitializeLane(ndata, laneButton);
             spawnedNotesToPlay.Add(noteClone);
-            previousNoteY.Add(noteClone.position.y);
+            previousNoteY.Add(0f);
             crossingLogged.Add(false);
         }
     }
@@ -63,21 +66,33 @@ public class LevelManager : MonoBehaviour
         float currentBeat = GetCurrentBeat();
         timer.GetComponent<TextMeshProUGUI>().text = $"{currentBeat}";
 
+        float travelSeconds = 2f;
+        float travelBeats = travelSeconds / conductorController.secPerBeat;
+        NoteData noteToDelete = null;
 
         if (spawnedNotesToPlay.Count > 0)
             for (int i = 0; i < spawnedNotesToPlay.Count; i++)
             {
                 NoteData noteData = NoteList[i];
+                float noteStartBeat = noteData.timeStamp - travelBeats;
+
                 if (crossingLogged[i] && currentBeat >= noteData.timeStamp + delayTime)
                 {
-                    DeleteNote(noteData);
+                    noteToDelete = noteData;
                 }
-                else
+
+                if (spawnedNotesToPlay[i] == null)
                 {
+                    if (currentBeat < noteStartBeat) continue;
+
+                    spawnedNotesToPlay[i] = InstantiateNote(noteData);
+                    previousNoteY[i] = spawnedNotesToPlay[i].position.y;
+                }
+
+                else if (currentBeat >= noteStartBeat) // only let beats spawn such that they reach the line in travelSeconds amount of time
+                {   
                     float targetBeat = noteData.timeStamp;
-                    float progress = targetBeat <= spawnBeat
-                        ? 1f
-                        : Mathf.InverseLerp(spawnBeat, targetBeat, currentBeat);
+                    float progress = Mathf.Clamp01((currentBeat - noteStartBeat) / travelBeats);
                     Vector3 lanePosition = noteCanvasButtons[(int)noteData.buttonType].position;
                     Vector3 spawnPosition = lanePosition + spawnPos;
                     Vector3 targetPosition = new Vector3(
@@ -115,6 +130,7 @@ public class LevelManager : MonoBehaviour
             }
 
         previousBeat = currentBeat;
+        DeleteNote(noteToDelete);
     }
 
     public void StoreNoteData(NoteData _newNote)
@@ -128,6 +144,17 @@ public class LevelManager : MonoBehaviour
     private float GetCurrentBeat()
     {
         return conductorController.GetSongPositionInBeats();
+    }
+
+    private Transform InstantiateNote(NoteData ndata)
+    {
+        Transform noteClone = Instantiate(notePrefab, noteParent);
+        Transform laneButton = noteCanvasButtons[(int)ndata.buttonType];
+        Vector3 lanePosition = laneButton.position;
+        noteClone.position = lanePosition + spawnPos;
+        NoteController noteController = noteClone.GetComponent<NoteController>();
+        if (noteController) noteController.InitializeLane(ndata, laneButton);
+        return noteClone;
     }
 
     public void DeleteNote(NoteData noteData)
@@ -154,7 +181,7 @@ public class LevelManager : MonoBehaviour
     {
         if (conductorController.recordAudio)
         {
-            string filePath = Path.Combine(Application.dataPath, $"Scripts/LevelData/RecordedLevel.json"); 
+            string filePath = Path.Combine(Application.dataPath, $"Scripts/LevelData/RecordedLevel.json");
             NoteList noteListWrapper = new NoteList();
             noteListWrapper.noteList = NoteList;
             string noteJson = JsonUtility.ToJson(noteListWrapper, true); // 2nd arg to format json nicely
