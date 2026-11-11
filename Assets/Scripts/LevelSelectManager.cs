@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;                // Required for .Where() and .ToList()
 using System.IO;
 using TMPro;
 using UnityEngine;
@@ -21,13 +22,36 @@ public class LevelSelectManager : MonoBehaviour
     void Start()
     {
         levelSelect = levelSelectHolder.GetComponentsInChildren<Button>();
-        Debug.Log(levelSelect);
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    public void RecordLevel()
+    {
+        MenuCanvas.SetActive(false);
+
+        Transform levelManager = Instantiate(levelManagerPrefab, GameCanvas.GetComponent<Transform>());
+        LevelManager levelManagerScript = levelManager.GetComponent<LevelManager>();
+
+        GameCanvas.SetActive(true);
+
+        levelManagerScript.conductorController = GameObject.Find("Conductor").GetComponent<ConductorController>();
+        levelManagerScript.noteParent = GameObject.Find("NoteHolderParent").GetComponent<Transform>();
+        levelManagerScript.noteCanvasButtons = Component.FindObjectsByType<Transform>().Where(x => x.name.Contains("NoteButton")).ToList();
+        // need to attach level manager script to the buttons 
+        foreach (Transform btn in levelManagerScript.noteCanvasButtons)
+        {
+            btn.GetComponent<ButtonController>().levelManager = levelManagerScript;
+        }
+        levelManagerScript.judgementLine = GameObject.Find("JudgementLine");
+        levelManagerScript.timer = GameObject.Find("Time");
+
+        levelManagerScript.enabled = true;
+        conductorController.ToggleRecord();
     }
 
     public void StartLevel(string levelName)
@@ -42,28 +66,39 @@ public class LevelSelectManager : MonoBehaviour
         if (File.Exists(filePathDev) || File.Exists(filePathBuild))
         {
             string jsonString = "";
-            if (File.Exists(filePathBuild)) 
+            if (File.Exists(filePathBuild))
             {
-                jsonString = File.ReadAllText(filePathBuild); 
+                jsonString = File.ReadAllText(filePathBuild);
             }
-            else 
+            else
             {
                 jsonString = File.ReadAllText(filePathDev);
             }
-            NoteList nlist = JsonUtility.FromJson<NoteList>(jsonString);
-            // Fix loop on single object
-            // Debug.Log(nlist);
-            // foreach (NoteData ndata in nlist)
-            // {
-            //     Debug.Log($"Loaded Note: {ndata.noteId}");
-            // }
-            // levelManagerScript.NoteList = nlist;
+            NoteList jsonData = JsonUtility.FromJson<NoteList>(jsonString);
+            levelManagerScript.NoteList = jsonData.noteList;
+
+            foreach (NoteData note in jsonData.noteList)
+            {
+                Debug.Log($"Loaded Note: {note.noteId}");
+            }
+
+            GameCanvas.SetActive(true);
 
             // set necessary game object components
+            levelManagerScript.conductorController = GameObject.Find("Conductor").GetComponent<ConductorController>();
+            levelManagerScript.noteParent = GameObject.Find("NoteHolderParent").GetComponent<Transform>();
+            levelManagerScript.noteCanvasButtons = Component.FindObjectsByType<Transform>().Where(x => x.name.Contains("NoteButton")).ToList();
+            levelManagerScript.noteCanvasButtons.Sort((a, b) => a.name.CompareTo(b.name));
+            // need to attach level manager script to the buttons 
+            foreach (Transform btn in levelManagerScript.noteCanvasButtons)
+            {
+                btn.GetComponent<ButtonController>().levelManager = levelManagerScript;
+            }
+            levelManagerScript.judgementLine = GameObject.Find("JudgementLine");
+            levelManagerScript.timer = GameObject.Find("Time");
 
+            levelManagerScript.enabled = true;
             conductorController.playGame = true;
-            levelManager.GetComponent<GameObject>().SetActive(true);
-            GameCanvas.SetActive(true);
         }
         else
         {

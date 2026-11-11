@@ -18,7 +18,7 @@ public class LevelManager : MonoBehaviour
     public Transform noteParent; // where to spawn the notes under
     public List<Transform> noteCanvasButtons; // the buttons we can press
 
-    private Vector3 spawnPos = new Vector3(0, 1000, 0); // pos to spawn the beats
+    private Vector3 spawnPos = new Vector3(0, 500, 0); // pos to spawn the beats
     private float spawnBeat; // beat we start spawning notes
     private float previousBeat;
 
@@ -148,6 +148,19 @@ public class LevelManager : MonoBehaviour
     {
         if (spawnedNotesToPlay[noteId] != null) return spawnedNotesToPlay[noteId].GetComponent<NoteController>();
         return (NoteController)null;
+    }
+
+    private void OnApplicationQuit()
+    {
+        if (conductorController.recordAudio)
+        {
+            string filePath = Path.Combine(Application.dataPath, $"Scripts/LevelData/RecordedLevel.json"); 
+            NoteList noteListWrapper = new NoteList();
+            noteListWrapper.noteList = NoteList;
+            string noteJson = JsonUtility.ToJson(noteListWrapper, true); // 2nd arg to format json nicely
+            Debug.Log(noteJson);
+            File.WriteAllText(filePath, noteJson);
+        }
     }
 
 }
