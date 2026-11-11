@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -95,4 +96,10 @@ public class NoteData
         isColliding = _isCol;
     }
 
+}
+
+[System.Serializable]
+public class NoteList
+{
+    public List<NoteData> noteList;
 }
