@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;                // Required for .Where() and .ToList()
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +10,7 @@ public class ButtonController : MonoBehaviour
     public KeyCode _Key;
     public LevelManager levelManager;
     public ConductorController conductorController;
-    public ScoreManager scoreManager;    
+    public ScoreManager scoreManager;
 
     private Button _button;
     private Image image;
@@ -43,8 +44,16 @@ public class ButtonController : MonoBehaviour
 
             if (conductorController.recordAudio)
             {
-                if (currentNote != null) currentNote.holdTime = GetCurrentBeat() - currentNote.timeStamp;
-                levelManager.StoreNoteData(currentNote);
+                if (currentNote != null)
+                {
+                    currentNote.holdTime = GetCurrentBeat() - currentNote.timeStamp;
+                    if (levelManager.NoteList.Where(n => n.noteId == currentNote.noteId).ToList().Count > 0)
+                    {
+                        currentNote.noteId = levelManager.NoteList.Count;
+                        levelManager.StoreNoteData(currentNote);
+                    }
+                    else levelManager.StoreNoteData(currentNote);
+                }
                 currentNote = null;
             }
         }
@@ -57,14 +66,12 @@ public class ButtonController : MonoBehaviour
 
     public void HandleButtonPress(NoteData ndata)
     {
-        // only delete the note with the lowest Y pos and same button id
-        // get all notes with the button id
-        // if note we are trying to delete is the note with lowest Y then proceed with button press
-
-        if (ndata != null && ndata.isColliding && Input.GetKey(_Key) && ndata.noteId == levelManager.NoteList[0].noteId)
+        // List<NoteData> notesOfSameLane = levelManager.NoteList.Where(n => n.buttonType == pressedButton.buttonType).ToList();
+        if (ndata != null && ndata.isColliding && Input.GetKeyDown(_Key) /*&& notesOfSameLane[0] == ndata*/)
+        Debug.Log($"This button is being deleted: {ndata.noteId}");
         {
             ndata.playerPressedAt = conductorController.GetSongPositionInBeats();
-            Debug.Log($"Player Pressed At: " + ndata.playerPressedAt);
+            // Debug.Log($"Player Pressed At: " + ndata.playerPressedAt);
             scoreManager.UpdateScore(ndata.playerPressedAt, ndata.timeStamp);
             ndata.isColliding = false;
             levelManager.DeleteNote(ndata);
