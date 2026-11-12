@@ -64,7 +64,10 @@ public class LevelManager : MonoBehaviour
         if (!conductorController || !judgementLine) return;
 
         float currentBeat = GetCurrentBeat();
-        timer.GetComponent<TextMeshProUGUI>().text = $"{currentBeat}";
+        
+        var timerText = timer.GetComponent<TextMeshProUGUI>();
+        timerText.text = currentBeat.ToString("F2");
+
 
         float travelSeconds = 2f;
         float travelBeats = travelSeconds / conductorController.secPerBeat;
@@ -90,7 +93,7 @@ public class LevelManager : MonoBehaviour
                 }
 
                 else if (currentBeat >= noteStartBeat) // only let beats spawn such that they reach the line in travelSeconds amount of time
-                {   
+                {
                     float targetBeat = noteData.timeStamp;
                     float progress = Mathf.Clamp01((currentBeat - noteStartBeat) / travelBeats);
                     Vector3 lanePosition = noteCanvasButtons[(int)noteData.buttonType].position;
