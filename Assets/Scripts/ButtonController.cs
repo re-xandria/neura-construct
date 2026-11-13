@@ -25,6 +25,9 @@ public class ButtonController : MonoBehaviour
 
     void Update()
     {
+        List<NoteData> collidingNotes = levelManager.NoteList.Where(n => n.buttonType == this.buttonType && n.isColliding).ToList();
+        Debug.Log($"Colliding Notes Count: {collidingNotes.Count}");
+
         if (Input.GetKeyDown(_Key))
         {
             image.color = Color.coral;
@@ -35,6 +38,11 @@ public class ButtonController : MonoBehaviour
                     buttonType,
                     levelManager.NoteList.Count,
                     GetCurrentBeat());
+            }
+            else if (collidingNotes.Count > 0)
+            {
+                NoteData closestNote = collidingNotes[0];
+                HandleButtonPress(closestNote);
             }
         }
 
@@ -66,10 +74,9 @@ public class ButtonController : MonoBehaviour
 
     public void HandleButtonPress(NoteData ndata)
     {
-        // List<NoteData> notesOfSameLane = levelManager.NoteList.Where(n => n.buttonType == pressedButton.buttonType).ToList();
-        if (ndata != null && ndata.isColliding && Input.GetKeyDown(_Key) /*&& notesOfSameLane[0] == ndata*/)
-        Debug.Log($"This button is being deleted: {ndata.noteId}");
+        if (ndata != null && ndata.isColliding)
         {
+        Debug.Log($"This button is being deleted: {ndata.noteId}");
             ndata.playerPressedAt = conductorController.GetSongPositionInBeats();
             // Debug.Log($"Player Pressed At: " + ndata.playerPressedAt);
             scoreManager.UpdateScore(ndata.playerPressedAt, ndata.timeStamp);

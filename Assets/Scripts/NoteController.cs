@@ -46,16 +46,16 @@ public class NoteController : MonoBehaviour
     // maybe in ButtonController Update() we can keep checking NoteList
     // we get the notes where isColliding is true, and call handle button press and pass in the note data
 
-    void OnCollisionStay2D(Collision2D button)
-    {
-        ButtonController collidedButton = button.collider.GetComponentInParent<ButtonController>();
+    // void OnCollisionStay2D(Collision2D button)
+    // {
+    //     ButtonController collidedButton = button.collider.GetComponentInParent<ButtonController>();
 
-        // This is an expensive operation to perform each frame for each note, need to find a way to improve
-        // List<NoteData> notesOfSameLane = levelManager.NoteList.Where(n => n.buttonType == collidedButton.buttonType).ToList();
-        // bool areOtherNotesColliding = notesOfSameLane.Where(n => n.isColliding == true).ToList().Count > 0 ? true : false; 
+    //     // This is an expensive operation to perform each frame for each note, need to find a way to improve
+    //     // List<NoteData> notesOfSameLane = levelManager.NoteList.Where(n => n.buttonType == collidedButton.buttonType).ToList();
+    //     // bool areOtherNotesColliding = notesOfSameLane.Where(n => n.isColliding == true).ToList().Count > 0 ? true : false; 
 
-        // ndata.isColliding = !areOtherNotesColliding ?  true : false;
-        if (collidedButton != null) collidedButton.HandleButtonPress(ndata);
-    }
+    //     // ndata.isColliding = !areOtherNotesColliding ?  true : false;
+    //     if (collidedButton != null) collidedButton.HandleButtonPress(ndata);
+    // }
 
 }
