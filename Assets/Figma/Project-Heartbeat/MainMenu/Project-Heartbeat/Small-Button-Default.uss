@@ -1,0 +1,31 @@
+.small-button-default {
+    display: flex;
+    width: 400px;
+    height: 80px;
+    padding: 20px 150px 20px 50px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #FFEAF1;
+    flex-direction: row;
+    color: #C04F9E;
+    -unity-font-definition: url("project://database/Assets/Figma/Rubik-Black%20SDF%201.asset?fileID=11400000&guid=b5e43527905fa46c9ab156ec16a70d7e&type=2#Rubik-Black SDF 1");
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.small-button-default:hover {
+    width: 425px;
+    height: 85px;
+    padding: 22.5px 150px 22.5px 50px;
+    background-color: #C04F9E;
+    color: #FFEAF1;
+}
+
+.small-button-default__e.small-button-default__e.small-button-default__e.small-button-default__e.small-button-default__e.small-button-default__e.small-button-default__e {
+    flex-shrink: 0;
+    color: #C04F9E;
+    -unity-font-definition: url("project://database/Assets/Figma/Rubik-Black%20SDF%201.asset?fileID=11400000&guid=b5e43527905fa46c9ab156ec16a70d7e&type=2#Rubik-Black SDF 1");
+    font-size: 20px;
+    white-space: nowrap;
+}
+

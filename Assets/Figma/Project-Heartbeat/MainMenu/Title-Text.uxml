@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="Title-Text.uss" />
+    <ui:VisualElement class="title-text">
+        <ui:Label name="text-0" text="DISPLAY TITLE" class="unity-label title-text__e" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ced1937e6a344ac0a9f905cc9237a5b, type: 3}
+  m_Name: Figma Mapping
+  m_EditorClassIdentifier: Unity.UIToolkit.Figma.Editor::Unity.UIToolkit.Figma.FigmaImportSettings
+  fontMap:
+  - family: Rubik
+    font: {fileID: 11400000, guid: b5e43527905fa46c9ab156ec16a70d7e, type: 2}
+  - family: Rubik
+    font: {fileID: 11400000, guid: 55305e68b2c8c4213bc1b2dd61973791, type: 2}
+  - family: Rubik
+    font: {fileID: 11400000, guid: ac5c72db2e0c84857a67315ab1956156, type: 2}
+  - family: Rubik
+    font: {fileID: 11400000, guid: 57de1a846b97a4283be904aa239de1c1, type: 2}
+  - family: Rubik
+    font: {fileID: 11400000, guid: 7d740926a557546c2be12df818e67aba, type: 2}
+  - family: Rubik
+    font: {fileID: 11400000, guid: 7eb85e9b33ef8465b9ae4b25e6a438c7, type: 2}
+  - family: Rubik
+    font: {fileID: 11400000, guid: 2997ef070568a47a1adbfa1c90c9dfc9, type: 2}
+  - family: Rubik
+    font: {fileID: 11400000, guid: 37f69aee45ae3438db5a17406b5eb386, type: 2}
+  - family: Rubik
+    font: {fileID: 11400000, guid: 51f35f9bfeb8b471ca2e87384bbde1a9, type: 2}
+  - family: Rubik
+    font: {fileID: 11400000, guid: 7dadb9a4cde694d589036beca74fd6ab, type: 2}
+  - family: Rubik
+    font: {fileID: 11400000, guid: 75232ed1c78b84b36962547c86f886e7, type: 2}
+  - family: Rubik
+    font: {fileID: 11400000, guid: 03a2734b75015427383030436031a482, type: 2}
+  - family: Rubik
+    font: {fileID: 11400000, guid: 4b1d1a5cf37df436680ecf43131f0847, type: 2}
+  - family: Rubik
+    font: {fileID: 11400000, guid: 0a275ef770df54f7e9efcc4d67991dce, type: 2}
+  classPrefix: 
+  controlMap: []

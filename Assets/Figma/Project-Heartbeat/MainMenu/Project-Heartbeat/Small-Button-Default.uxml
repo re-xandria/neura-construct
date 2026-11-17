@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="Small-Button-Default.uss" />
+    <ui:VisualElement class="small-button-default">
+        <ui:Label name="text-0" text="BUTTON" class="unity-label small-button-default__e" />
+    </ui:VisualElement>
+</ui:UXML>
