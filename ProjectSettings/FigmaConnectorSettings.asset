@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84130decf0c7479f986a76694606b6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.UIToolkit.Figma.Editor::Unity.UIToolkit.Figma.FigmaConnectorSettings
-  m_Root: Assets/Figma/Project-Heartbeat/MainMenu
-  m_Files:
-  - fileName: Project Heartbeat
-    folder: Assets/Figma/Project-Heartbeat/MainMenu/Project-Heartbeat
+  m_Root: Assets/Figma/Project-Heartbeat
+  m_Files: []
   m_ActiveMappingGuid: 6a927aaa220e94e02a48d14543e62a05

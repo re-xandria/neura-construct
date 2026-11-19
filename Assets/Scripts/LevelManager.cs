@@ -18,7 +18,7 @@ public class LevelManager : MonoBehaviour
     public Transform noteParent; // where to spawn the notes under
     public List<Transform> noteCanvasButtons; // the buttons we can press
 
-    private Vector3 spawnPos = new Vector3(0, 500, 0); // pos to spawn the beats
+    private Vector3 spawnPos = new Vector3(0, 1500, 0); // pos to spawn the beats
     private float spawnBeat; // beat we start spawning notes
     private float previousBeat;
 

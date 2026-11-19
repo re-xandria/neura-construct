@@ -8,10 +8,9 @@
     background-color: #FFEAF1;
     flex-direction: row;
     color: #C04F9E;
-    -unity-font-definition: url("project://database/Assets/Figma/Rubik-Medium.asset");
+    -unity-font-definition: url("project://database/Assets/Figma/Rubik-Black.asset?fileID=11400000&guid=b5e43527905fa46c9ab156ec16a70d7e&type=2#Rubik-Black");
     font-size: 20px;
     white-space: nowrap;
-    filter: drop-shadow(0px 5px 0px 5px #C04F9E);
 }
 
 .small-button-default:hover {
@@ -25,7 +24,7 @@
 .small-button-default__e.small-button-default__e.small-button-default__e.small-button-default__e.small-button-default__e.small-button-default__e.small-button-default__e {
     flex-shrink: 0;
     color: #C04F9E;
-    -unity-font-definition: url("project://database/Assets/Figma/Rubik-Medium.asset");
+    -unity-font-definition: url("project://database/Assets/Figma/Rubik-Black.asset?fileID=11400000&guid=b5e43527905fa46c9ab156ec16a70d7e&type=2#Rubik-Black");
     font-size: 20px;
     white-space: nowrap;
 }

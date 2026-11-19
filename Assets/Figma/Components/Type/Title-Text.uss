@@ -2,7 +2,7 @@
     width: 802px;
     height: 100px;
     color: #0D707D;
-    -unity-font-definition: url("project://database/Assets/Figma/Rubik-Black%20SDF%201.asset?fileID=11400000&guid=b5e43527905fa46c9ab156ec16a70d7e&type=2#Rubik-Black SDF 1");
+    -unity-font-definition: url("project://database/Assets/Figma/Rubik-Black.asset?fileID=11400000&guid=b5e43527905fa46c9ab156ec16a70d7e&type=2#Rubik-Black");
     font-size: 100px;
     -unity-font-style: bold;
     letter-spacing: 3px;
@@ -11,7 +11,7 @@
 
 .title-text__e.title-text__e.title-text__e.title-text__e.title-text__e.title-text__e.title-text__e {
     color: #0D707D;
-    -unity-font-definition: url("project://database/Assets/Figma/Rubik-Black%20SDF%201.asset?fileID=11400000&guid=b5e43527905fa46c9ab156ec16a70d7e&type=2#Rubik-Black SDF 1");
+    -unity-font-definition: url("project://database/Assets/Figma/Rubik-Black.asset?fileID=11400000&guid=b5e43527905fa46c9ab156ec16a70d7e&type=2#Rubik-Black");
     font-size: 100px;
     -unity-font-style: bold;
     letter-spacing: 3px;

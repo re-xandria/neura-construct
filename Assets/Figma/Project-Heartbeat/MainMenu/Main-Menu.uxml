@@ -1,28 +1,31 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:Template name="Small-Button-Default" src="project://database/Assets/Figma/Project-Heartbeat/MainMenu/Small-Button-Default.uxml?fileID=9197481963319205126&amp;guid=32ece58ffa5ac45ec89037cbe080c18d&amp;type=3#Small-Button-Default"/>
-    <ui:Template name="Subtitle-Text" src="project://database/Assets/Figma/Project-Heartbeat/MainMenu/Subtitle-Text.uxml?fileID=9197481963319205126&amp;guid=ca31f779c2da44e078f93b12d4e41f03&amp;type=3#Subtitle-Text"/>
-    <ui:Template name="Title-Text" src="project://database/Assets/Figma/Project-Heartbeat/MainMenu/Title-Text.uxml?fileID=9197481963319205126&amp;guid=8fc63c943afe646a8821d16c8e6dde49&amp;type=3#Title-Text"/>
-    <Style src="project://database/Assets/Figma/Project-Heartbeat/MainMenu/Main-Menu.uss?fileID=7433441132597879392&amp;guid=ea818fb516ac745798f04caaf820a000&amp;type=3#Main-Menu"/>
+    <ui:Template name="Small-Button-Default" src="../../Components/Buttons/Small-Button-Default.uxml"/>
+    <ui:Template name="Subtitle-Text" src="/Assets/Figma/Components/Type/Subtitle-Text.uxml"/>
+    <ui:Template name="Title-Text" src="/Assets/Figma/Components/Type/Title-Text.uxml"/>
+    <Style src="/Assets/Figma/Project-Heartbeat/MainMenu/Main-Menu.uss"/>
     <ui:VisualElement class="main-menu" style="overflow: hidden; background-color: rgb(237, 185, 159);">
-        <ui:VisualElement style="display: flex; width: 400px; flex-direction: column; align-items: flex-start; position: absolute; left: 217px; top: 440px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
-            <ui:Instance template="Small-Button-Default" name="startButton" style="flex-shrink: 0; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0; -unity-font-definition: initial;">
-                <AttributeOverrides element-name="text-0" text="START GAME "/>
+        <ui:VisualElement style="display: flex; width: 400px; flex-direction: column; align-items: flex-start; position: absolute; left: 217px; top: 440px;">
+            <ui:Instance template="Small-Button-Default" name="startButton" style="flex-shrink: 0; margin-bottom: 15px;">
+                <AttributeOverrides element-name="text-0" text="START GAME"/>
             </ui:Instance>
-            <ui:Instance template="Small-Button-Default" name="achievementsButton" style="flex-shrink: 0; margin-bottom: 10px;">
+            <ui:Instance template="Small-Button-Default" name="recordButton" style="flex-shrink: 0; margin-bottom: 15px;">
+                <AttributeOverrides element-name="text-0" text="RECORD LEVEL"/>
+            </ui:Instance>
+            <ui:Instance template="Small-Button-Default" name="optionsButton" style="flex-shrink: 0; margin-bottom: 15px;">
                 <AttributeOverrides element-name="text-0" text="ACHIEVEMENTS"/>
             </ui:Instance>
-            <ui:Instance template="Small-Button-Default" name="optionsButton" style="flex-shrink: 0; margin-bottom: 10px;">
+            <ui:Instance template="Small-Button-Default" name="achievementsButton" style="flex-shrink: 0; margin-bottom: 15px;">
                 <AttributeOverrides element-name="text-0" text="OPTIONS"/>
             </ui:Instance>
-            <ui:Instance template="Small-Button-Default" name="exitButton" style="flex-shrink: 0; margin-bottom: 10px;">
+            <ui:Instance template="Small-Button-Default" name="exitButton" style="flex-shrink: 0;">
                 <AttributeOverrides element-name="text-0" text="EXIT GAME"/>
             </ui:Instance>
         </ui:VisualElement>
         <ui:VisualElement style="width: 817px; height: 147px; position: absolute; left: 217px; top: 180px;">
-            <ui:Instance template="Subtitle-Text" class="subtitle-text__i" style="position: absolute; left: 0; top: 0; width: 689.479px;">
+            <ui:Instance template="Subtitle-Text" class="subtitle-text__i" style="position: absolute; left: 0; top: 0; width: 689.479px; -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/Rubik-Medium.ttf?fileID=12800000&amp;guid=b2594a86d5cc54b5f845c03ce9759327&amp;type=3#Rubik-Medium&quot;);">
                 <AttributeOverrides element-name="text-0" text="PROJECT"/>
             </ui:Instance>
-            <ui:Instance template="Title-Text" class="title-text__i" style="position: absolute; left: 0; top: 47px; width: 817px; -unity-text-auto-size: none;">
+            <ui:Instance template="Title-Text" class="title-text__i" style="position: absolute; left: 0; top: 47px; width: 817px; letter-spacing: -5px;">
                 <AttributeOverrides element-name="text-0" text="HEARTBEAT"/>
             </ui:Instance>
         </ui:VisualElement>
