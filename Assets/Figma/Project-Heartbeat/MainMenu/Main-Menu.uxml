@@ -5,16 +5,16 @@
     <Style src="project://database/Assets/Figma/Project-Heartbeat/MainMenu/Main-Menu.uss?fileID=7433441132597879392&amp;guid=ea818fb516ac745798f04caaf820a000&amp;type=3#Main-Menu"/>
     <ui:VisualElement class="main-menu" style="overflow: hidden; background-color: rgb(237, 185, 159);">
         <ui:VisualElement style="display: flex; width: 400px; flex-direction: column; align-items: flex-start; position: absolute; left: 217px; top: 440px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
-            <ui:Instance template="Small-Button-Default" name="TemplateContainer" style="flex-shrink: 0; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0; -unity-font-definition: initial;">
+            <ui:Instance template="Small-Button-Default" name="startButton" style="flex-shrink: 0; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0; -unity-font-definition: initial;">
                 <AttributeOverrides element-name="text-0" text="START GAME "/>
             </ui:Instance>
-            <ui:Instance template="Small-Button-Default" style="flex-shrink: 0; margin-bottom: 10px;">
+            <ui:Instance template="Small-Button-Default" name="achievementsButton" style="flex-shrink: 0; margin-bottom: 10px;">
                 <AttributeOverrides element-name="text-0" text="ACHIEVEMENTS"/>
             </ui:Instance>
-            <ui:Instance template="Small-Button-Default" style="flex-shrink: 0; margin-bottom: 10px;">
+            <ui:Instance template="Small-Button-Default" name="optionsButton" style="flex-shrink: 0; margin-bottom: 10px;">
                 <AttributeOverrides element-name="text-0" text="OPTIONS"/>
             </ui:Instance>
-            <ui:Instance template="Small-Button-Default" style="flex-shrink: 0; margin-bottom: 10px;">
+            <ui:Instance template="Small-Button-Default" name="exitButton" style="flex-shrink: 0; margin-bottom: 10px;">
                 <AttributeOverrides element-name="text-0" text="EXIT GAME"/>
             </ui:Instance>
         </ui:VisualElement>

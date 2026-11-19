@@ -4,12 +4,10 @@ using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class LevelSelectManager : MonoBehaviour
 {
-
-    private Button[] levelSelect;
-    public GameObject levelSelectHolder;
 
     public ConductorController conductorController;
     public Transform levelManagerPrefab;
@@ -21,7 +19,6 @@ public class LevelSelectManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        levelSelect = levelSelectHolder.GetComponentsInChildren<Button>();
     }
 
     // Update is called once per frame
@@ -54,7 +51,7 @@ public class LevelSelectManager : MonoBehaviour
         conductorController.ToggleRecord();
     }
 
-    public void StartLevel(string levelName)
+    public void StartLevel(ClickEvent evt, string levelName)
     {
         MenuCanvas.SetActive(false);
         Transform levelManager = Instantiate(levelManagerPrefab, GameCanvas.GetComponent<Transform>());
