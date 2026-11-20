@@ -1,6 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
-    <Style src="Subtitle-Text.uss" />
-    <ui:VisualElement class="subtitle-text">
-        <ui:Label name="text-0" text="SUBTITLE" class="unity-label subtitle-text__e" />
-    </ui:VisualElement>
-</ui:UXML>

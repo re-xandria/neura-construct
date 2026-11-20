@@ -1,0 +1,20 @@
+
+.small-button-default  {
+    -unity-font-definition: url("project:Assets/TextMesh Pro/Fonts/Rubik-Semibold.ttf");
+    -unity-text-align: middle-left;
+    margin: 2% 0 2% 0;
+    border-color: rgba(0, 0, 0 ,0);
+    transition: scale .5s ease;
+    transition: rotate .25s ease;
+    scale: 1;
+}
+
+.small-button-default:hover {
+    -unity-font-definition: url("project:Assets/TextMesh Pro/Fonts/Rubik-Semibold.ttf");
+    -unity-text-align: middle-left;
+    translate: 3% 0 3% 0;
+    transition: scale .5s ease;
+    transition: rotate .25s ease;
+    scale: 1.2;
+    rotate: -3deg;
+}

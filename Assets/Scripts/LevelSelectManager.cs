@@ -51,7 +51,7 @@ public class LevelSelectManager : MonoBehaviour
         conductorController.ToggleRecord();
     }
 
-    public void StartLevel(ClickEvent evt, string levelName)
+    public void StartLevel(string levelName)
     {
         MenuCanvas.SetActive(false);
         Transform levelManager = Instantiate(levelManagerPrefab, GameCanvas.GetComponent<Transform>());

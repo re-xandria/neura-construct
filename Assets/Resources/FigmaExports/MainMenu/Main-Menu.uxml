@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="Main-Menu.uss" />
+    <ui:VisualElement class="main-menu" style="overflow: hidden; background-color: #EDB99F;">
+        <ui:VisualElement style="width: 817px; height: 147px; position: absolute; left: 217px; top: 180px;">
+            <ui:Label text="PROJECT" class="subtitle-text unity-label" style="width: 689.479px; position: absolute; left: 0px; top: 0px;" />
+            <ui:Label text="HEARTBEAT" class="title-text unity-label" style="width: 817px; position: absolute; left: 0px; top: 47px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="display: flex; width: 500px; flex-direction: column; align-items: flex-start; position: absolute; left: 217px; top: 440px;">
+            <ui:Button text="START GAME" class="small-button-default unity-button" style="width: initial; flex-shrink: 0; align-self: stretch;" />
+            <ui:Button text="RECORD LEVEL" class="small-button-default unity-button" style="width: initial; flex-shrink: 0; align-self: stretch;" />
+            <ui:Button text="ACHIEVEMENTS" class="small-button-default unity-button" style="width: initial; flex-shrink: 0; align-self: stretch;" />
+            <ui:Button text="OPTIONS" class="small-button-default unity-button" style="width: initial; flex-shrink: 0; align-self: stretch;" />
+            <ui:Button text="EXIT GAME" class="small-button-default unity-button" style="width: initial; flex-shrink: 0; align-self: stretch;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
