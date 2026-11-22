@@ -1,69 +1,62 @@
-using System;
-using Microsoft.Unity.VisualStudio.Editor;
+using System.Collections.Generic;
+using System.Linq;                // Required for .Where() and .ToList()
+
 using UnityEngine;
 
 public class NoteController : MonoBehaviour
 {
+    public LevelManager levelManager;
 
-    public float targetBeat;
+    public bool legacyNotebehavior;
 
-    private Vector3 spawnPosition;
-    private float spawnBeat;
-    private float travelBeats;
-    private float destroyBeat;
+    public Transform laneButton;
+    public NoteData ndata;
 
-    public ConductorController conductorController;
-    public GameObject judgementLine;
-    public GameObject destroyLine;
+    public void InitializeLane(NoteData noteData, Transform buttonTransform)
+    {
+        ndata = noteData;
+        laneButton = buttonTransform;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        spawnPosition = transform.position;
-        spawnBeat = conductorController.songPositionInBeats;
-        travelBeats = targetBeat - spawnBeat;
-        destroyBeat = travelBeats + 15;
-
-        if (travelBeats <= 0f)
-        {
-            Debug.LogError($"Note targetBeat must be after its spawn beat. Spawn: {spawnBeat}, target: {targetBeat}");
-            enabled = false;
-        }
-
+        // levelManager = GameObject.Find("LevelManagerPrefab(Clone)").GetComponent<LevelManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float currBeat = Mathf.FloorToInt(conductorController.songPositionInBeats);
-
-        if (transform.position.y > judgementLine.transform.position.y)
-        {
-            float progress = Mathf.InverseLerp(spawnBeat, targetBeat, currBeat);
-
-            transform.position = Vector3.Lerp(
-                spawnPosition,
-                judgementLine.transform.position,
-                progress
-            );
-        }
-        else
-        {
-            float progress = Mathf.InverseLerp(targetBeat, destroyBeat, currBeat);
-
-            transform.position = Vector3.Lerp(
-                judgementLine.transform.position,
-                destroyLine.transform.position,
-                progress
-            );
-        } 
-
     }
+
+    // how can we ensure only 1 note is removed each button press?
+    // the collision is active for all notes in the collider area
+    // maybe we can only set isColliding as true if no other note in that lane has the value as true
+
+    void OnCollisionEnter2D(Collision2D button)
+    {
+        ButtonController collidedButton = button.collider.GetComponentInParent<ButtonController>();
+        if (!collidedButton) return;
+
+        ndata.isColliding = true;
+        Debug.Log($"ndata: {ndata.noteId} isColliding {ndata.isColliding}");
+    }
+
+    // we should get rid of this callback and instead add an input handler on press of the key that only deletes the note nearest the judgement ine
+    // but how can we pass the note data to the button?
+    // maybe in ButtonController Update() we can keep checking NoteList
+    // we get the notes where isColliding is true, and call handle button press and pass in the note data
+
+    // void OnCollisionStay2D(Collision2D button)
+    // {
+    //     ButtonController collidedButton = button.collider.GetComponentInParent<ButtonController>();
+
+    //     // This is an expensive operation to perform each frame for each note, need to find a way to improve
+    //     // List<NoteData> notesOfSameLane = levelManager.NoteList.Where(n => n.buttonType == collidedButton.buttonType).ToList();
+    //     // bool areOtherNotesColliding = notesOfSameLane.Where(n => n.isColliding == true).ToList().Count > 0 ? true : false; 
+
+    //     // ndata.isColliding = !areOtherNotesColliding ?  true : false;
+    //     if (collidedButton != null) collidedButton.HandleButtonPress(ndata);
+    // }
+
 }
-
-// Note gets to the beat at the intended time but stops
-// Note does not move smoothly, moves x distance on each beat
-// How can we get the beat to move smoothly towards the line?
-// How can we get the beat to continue towards the bottom of the screen after it gets to the line?
-
-// Make a second judgement line that the note must get to after the first one, and delete it from the world when it gets to that line

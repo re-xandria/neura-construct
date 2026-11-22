@@ -1,0 +1,36 @@
+.small-button-default {
+    display: flex;
+    width: 400px;
+    height: 80px;
+    padding: 20px 150px 20px 50px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #FFEAF1;
+    flex-direction: row;
+    color: #C04F9E;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/Rubik-Black.ttf?fileID=12800000&guid=1aa3ea8c54a5346a08178cd91a44e3c7&type=3#Rubik-Black");
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.small-button-default:hover {
+    width: 500px;
+    height: 100px;
+    padding: 22.5px 150px 22.5px 50px;
+    background-color: #C04F9E;
+    color: #FFEAF1;
+}
+
+.main-menu-button-stack {
+    width: 500px;
+    flex-shrink: 0;
+}
+
+.unity-ui-document__root > .main-menu-button-stack {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    width: auto;
+}
+

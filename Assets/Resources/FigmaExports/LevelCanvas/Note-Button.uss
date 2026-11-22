@@ -1,0 +1,19 @@
+.note-button {
+    width: 200px;
+    height: 40px;
+}
+
+.note-button-2 {
+    flex-shrink: 0;
+}
+
+.unity-ui-document__root > .note-button-2 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: auto;
+    height: auto;
+}
+

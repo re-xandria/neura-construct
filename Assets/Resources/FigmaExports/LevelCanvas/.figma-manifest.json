@@ -1,0 +1,3435 @@
+{
+    "schemaVersion": 1,
+    "fileName": "Project Heartbeat",
+    "fileId": "691f45f0ef0dbcdfa854257ffd1538f6",
+    "tokens": [],
+    "screens": [
+        {
+            "kind": "",
+            "assetName": "Note-Button-1",
+            "rootNodeId": "18:272",
+            "contentHash": "36990605a4ac7ec2",
+            "generated": [
+                "Note-Button-1.uss",
+                "Note-Button-1.uxml"
+            ],
+            "tokens": [],
+            "nodes": [
+                {
+                    "figmaNodeId": "18:272",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Note-Button-1",
+                    "path": "1",
+                    "tag": "Button",
+                    "classes": "unity-button",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "border-radius",
+                            "v": "10px"
+                        },
+                        {
+                            "k": "border-width",
+                            "v": "8px"
+                        },
+                        {
+                            "k": "border-color",
+                            "v": "#FFEAF1"
+                        },
+                        {
+                            "k": "flex-shrink",
+                            "v": "0"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                }
+            ],
+            "components": [],
+            "states": [],
+            "templateNames": [],
+            "classNames": [],
+            "library": [],
+            "links": [],
+            "sheetLinks": [],
+            "keptSheets": [],
+            "libraryVariables": [],
+            "matchedMappings": []
+        },
+        {
+            "kind": "",
+            "assetName": "Note-Button-2",
+            "rootNodeId": "18:275",
+            "contentHash": "a3b2e51efb379f83",
+            "generated": [
+                "Note-Button-2.uss",
+                "Note-Button-2.uxml"
+            ],
+            "tokens": [],
+            "nodes": [
+                {
+                    "figmaNodeId": "18:275",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Note-Button-2",
+                    "path": "1",
+                    "tag": "Button",
+                    "classes": "unity-button",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "border-radius",
+                            "v": "10px"
+                        },
+                        {
+                            "k": "border-width",
+                            "v": "8px"
+                        },
+                        {
+                            "k": "border-color",
+                            "v": "#FFEAF1"
+                        },
+                        {
+                            "k": "flex-shrink",
+                            "v": "0"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                }
+            ],
+            "components": [],
+            "states": [],
+            "templateNames": [],
+            "classNames": [],
+            "library": [],
+            "links": [],
+            "sheetLinks": [],
+            "keptSheets": [],
+            "libraryVariables": [],
+            "matchedMappings": []
+        },
+        {
+            "kind": "",
+            "assetName": "Note-Button-3",
+            "rootNodeId": "18:276",
+            "contentHash": "cea45678575b782c",
+            "generated": [
+                "Note-Button-3.uss",
+                "Note-Button-3.uxml"
+            ],
+            "tokens": [],
+            "nodes": [
+                {
+                    "figmaNodeId": "18:276",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Note-Button-3",
+                    "path": "1",
+                    "tag": "Button",
+                    "classes": "unity-button",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "border-radius",
+                            "v": "10px"
+                        },
+                        {
+                            "k": "border-width",
+                            "v": "8px"
+                        },
+                        {
+                            "k": "border-color",
+                            "v": "#FFEAF1"
+                        },
+                        {
+                            "k": "flex-shrink",
+                            "v": "0"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                }
+            ],
+            "components": [],
+            "states": [],
+            "templateNames": [],
+            "classNames": [],
+            "library": [],
+            "links": [],
+            "sheetLinks": [],
+            "keptSheets": [],
+            "libraryVariables": [],
+            "matchedMappings": []
+        },
+        {
+            "kind": "",
+            "assetName": "Note-Button-4",
+            "rootNodeId": "18:277",
+            "contentHash": "a6b1bfb0d53e94cd",
+            "generated": [
+                "Note-Button-4.uss",
+                "Note-Button-4.uxml"
+            ],
+            "tokens": [],
+            "nodes": [
+                {
+                    "figmaNodeId": "18:277",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Note-Button-4",
+                    "path": "1",
+                    "tag": "Button",
+                    "classes": "unity-button",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "border-radius",
+                            "v": "10px"
+                        },
+                        {
+                            "k": "border-width",
+                            "v": "8px"
+                        },
+                        {
+                            "k": "border-color",
+                            "v": "#FFEAF1"
+                        },
+                        {
+                            "k": "flex-shrink",
+                            "v": "0"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                }
+            ],
+            "components": [],
+            "states": [],
+            "templateNames": [],
+            "classNames": [],
+            "library": [],
+            "links": [],
+            "sheetLinks": [],
+            "keptSheets": [],
+            "libraryVariables": [],
+            "matchedMappings": []
+        },
+        {
+            "kind": "",
+            "assetName": "Level-UI",
+            "rootNodeId": "8:169",
+            "contentHash": "80884de190609972",
+            "generated": [
+                "images/img-dc3ab40de81fa153d1ae6d319d4218cd-407.svg",
+                "images/img-1gtr4tr1pqv7bv0qk09dt001mrio-149.png",
+                "Level-UI.uss",
+                "Level-UI.uxml",
+                "Heading-4.uss",
+                "Heading-4.uxml",
+                "Heading-5.uss",
+                "Heading-5.uxml",
+                "Heading-3.uss",
+                "Heading-3.uxml",
+                "Small-Button-Default.uss",
+                "Small-Button-Default.uxml"
+            ],
+            "tokens": [],
+            "nodes": [
+                {
+                    "figmaNodeId": "8:169",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1",
+                    "tag": "VisualElement",
+                    "classes": "level-ui",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "1920px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "1080px"
+                        },
+                        {
+                            "k": "flex-shrink",
+                            "v": "0"
+                        },
+                        {
+                            "k": "overflow",
+                            "v": "hidden"
+                        },
+                        {
+                            "k": "background-color",
+                            "v": "#EDB99F"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "18:271",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/1",
+                    "tag": "VisualElement",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 1920.0,
+                    "innerH": 1080.0,
+                    "containerW": 1920.0,
+                    "containerH": 1080.0,
+                    "containerIdX": "8:169",
+                    "containerIdY": "8:169",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "display",
+                            "v": "none"
+                        },
+                        {
+                            "k": "width",
+                            "v": "1920px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "110px"
+                        },
+                        {
+                            "k": "opacity",
+                            "v": "0.6"
+                        },
+                        {
+                            "k": "background-color",
+                            "v": "rgba(255, 234, 241, 0.44)"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "50%"
+                        },
+                        {
+                            "k": "margin-left",
+                            "v": "-960px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "873px"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "20:327",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/2",
+                    "tag": "VisualElement",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": true,
+                    "innerW": 1920.0,
+                    "innerH": 1080.0,
+                    "containerW": 1920.0,
+                    "containerH": 1080.0,
+                    "containerIdX": "8:169",
+                    "containerIdY": "8:169",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "860px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "1080px"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "530px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "0px"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "20:278",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/2/1",
+                    "tag": "VisualElement",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 530.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 860.0,
+                    "innerH": 1080.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "1080px"
+                        },
+                        {
+                            "k": "opacity",
+                            "v": "0.5"
+                        },
+                        {
+                            "k": "background-color",
+                            "v": "rgba(255, 234, 241, 0.33)"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "0px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "0px"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "20:279",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/2/2",
+                    "tag": "VisualElement",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 530.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 860.0,
+                    "innerH": 1080.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "1080px"
+                        },
+                        {
+                            "k": "opacity",
+                            "v": "0.5"
+                        },
+                        {
+                            "k": "background-color",
+                            "v": "rgba(255, 234, 241, 0.33)"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "220px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "0px"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "20:280",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/2/3",
+                    "tag": "VisualElement",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 530.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 860.0,
+                    "innerH": 1080.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "1080px"
+                        },
+                        {
+                            "k": "opacity",
+                            "v": "0.5"
+                        },
+                        {
+                            "k": "background-color",
+                            "v": "rgba(255, 234, 241, 0.33)"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "440px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "0px"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "20:281",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/2/4",
+                    "tag": "VisualElement",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 530.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 860.0,
+                    "innerH": 1080.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "1080px"
+                        },
+                        {
+                            "k": "opacity",
+                            "v": "0.5"
+                        },
+                        {
+                            "k": "background-color",
+                            "v": "rgba(255, 234, 241, 0.33)"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "660px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "0px"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "178:306",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/3",
+                    "tag": "VisualElement",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": true,
+                    "innerW": 1920.0,
+                    "innerH": 1080.0,
+                    "containerW": 1920.0,
+                    "containerH": 1080.0,
+                    "containerIdX": "8:169",
+                    "containerIdY": "8:169",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "860px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "border-radius",
+                            "v": "10px"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "50%"
+                        },
+                        {
+                            "k": "margin-left",
+                            "v": "-430px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "940px"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "18:274",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/3/1",
+                    "tag": "VisualElement",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": true,
+                    "layoutMode": "HORIZONTAL",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 530.0,
+                    "placementOffsetY": 940.0,
+                    "isGroup": false,
+                    "innerW": 860.0,
+                    "innerH": 40.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "display",
+                            "v": "flex"
+                        },
+                        {
+                            "k": "align-items",
+                            "v": "center"
+                        },
+                        {
+                            "k": "border-radius",
+                            "v": "10px"
+                        },
+                        {
+                            "k": "flex-direction",
+                            "v": "row"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "0px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "0px"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "18:272",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/3/1/1",
+                    "tag": "Button",
+                    "classes": "unity-button",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "flex-shrink",
+                            "v": "0"
+                        },
+                        {
+                            "k": "border-radius",
+                            "v": "10px"
+                        },
+                        {
+                            "k": "border-width",
+                            "v": "8px"
+                        },
+                        {
+                            "k": "border-color",
+                            "v": "#FFEAF1"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "18:275",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/3/1/2",
+                    "tag": "Button",
+                    "classes": "unity-button",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "flex-shrink",
+                            "v": "0"
+                        },
+                        {
+                            "k": "border-radius",
+                            "v": "10px"
+                        },
+                        {
+                            "k": "border-width",
+                            "v": "8px"
+                        },
+                        {
+                            "k": "border-color",
+                            "v": "#FFEAF1"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "18:276",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/3/1/3",
+                    "tag": "Button",
+                    "classes": "unity-button",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "flex-shrink",
+                            "v": "0"
+                        },
+                        {
+                            "k": "border-radius",
+                            "v": "10px"
+                        },
+                        {
+                            "k": "border-width",
+                            "v": "8px"
+                        },
+                        {
+                            "k": "border-color",
+                            "v": "#FFEAF1"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "18:277",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/3/1/4",
+                    "tag": "Button",
+                    "classes": "unity-button",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "flex-shrink",
+                            "v": "0"
+                        },
+                        {
+                            "k": "border-radius",
+                            "v": "10px"
+                        },
+                        {
+                            "k": "border-width",
+                            "v": "8px"
+                        },
+                        {
+                            "k": "border-color",
+                            "v": "#FFEAF1"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "20:324",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/4",
+                    "tag": "Instance",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": true,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 1920.0,
+                    "innerH": 1080.0,
+                    "containerW": 1920.0,
+                    "containerH": 1080.0,
+                    "containerIdX": "8:169",
+                    "containerIdY": "8:169",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "120px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "114px"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "heading-4__i",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "20:332",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/5",
+                    "tag": "Instance",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": true,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 1920.0,
+                    "innerH": 1080.0,
+                    "containerW": 1920.0,
+                    "containerH": 1080.0,
+                    "containerIdX": "8:169",
+                    "containerIdY": "8:169",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "120px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "161px"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "heading-5__i",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "20:343",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/6",
+                    "tag": "Instance",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": true,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 1920.0,
+                    "innerH": 1080.0,
+                    "containerW": 1920.0,
+                    "containerH": 1080.0,
+                    "containerIdX": "8:169",
+                    "containerIdY": "8:169",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "120px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "847px"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "heading-3__i",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "20:358",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/7",
+                    "tag": "VisualElement",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": true,
+                    "innerW": 1920.0,
+                    "innerH": 1080.0,
+                    "containerW": 1920.0,
+                    "containerH": 1080.0,
+                    "containerIdX": "8:169",
+                    "containerIdY": "8:169",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "90px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "90px"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "1695px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "93px"
+                        },
+                        {
+                            "k": "background-image",
+                            "v": "url(\"project://database/Assets/Resources/FigmaExports/Project-Heartbeat/images/img-dc3ab40de81fa153d1ae6d319d4218cd-407.svg?fileID=7388822144124034973&guid=efcc02b0679884f62943589021b41854&type=3#img-dc3ab40de81fa153d1ae6d319d4218cd-407\")"
+                        },
+                        {
+                            "k": "-unity-background-scale-mode",
+                            "v": "scale-to-fit"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "62:1673",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/8",
+                    "tag": "Instance",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": true,
+                    "layoutMode": "HORIZONTAL",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 1920.0,
+                    "innerH": 1080.0,
+                    "containerW": 1920.0,
+                    "containerH": 1080.0,
+                    "containerIdX": "8:169",
+                    "containerIdY": "8:169",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "1470px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "889px"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "small-button-default__i",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "178:305",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/9",
+                    "tag": "VisualElement",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": true,
+                    "innerW": 1920.0,
+                    "innerH": 1080.0,
+                    "containerW": 1920.0,
+                    "containerH": 1080.0,
+                    "containerIdX": "8:169",
+                    "containerIdY": "8:169",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "860px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "border-radius",
+                            "v": "15px"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "530px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "-190px"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "177:272",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/9/1",
+                    "tag": "VisualElement",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 530.0,
+                    "placementOffsetY": -190.0,
+                    "isGroup": false,
+                    "innerW": 860.0,
+                    "innerH": 40.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "0px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "0px"
+                        },
+                        {
+                            "k": "background-image",
+                            "v": "url(\"project://database/Assets/Resources/FigmaExports/Project-Heartbeat/images/img-1gtr4tr1pqv7bv0qk09dt001mrio-149.png?fileID=2800000&guid=d55a2ef4677bb47c1a9d832bb22a3299&type=3#img-1gtr4tr1pqv7bv0qk09dt001mrio-149\")"
+                        },
+                        {
+                            "k": "-unity-background-scale-mode",
+                            "v": "scale-to-fit"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "177:273",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/9/2",
+                    "tag": "VisualElement",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 530.0,
+                    "placementOffsetY": -190.0,
+                    "isGroup": false,
+                    "innerW": 860.0,
+                    "innerH": 40.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "220px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "0px"
+                        },
+                        {
+                            "k": "background-image",
+                            "v": "url(\"project://database/Assets/Resources/FigmaExports/Project-Heartbeat/images/img-1gtr4tr1pqv7bv0qk09dt001mrio-149.png?fileID=2800000&guid=d55a2ef4677bb47c1a9d832bb22a3299&type=3#img-1gtr4tr1pqv7bv0qk09dt001mrio-149\")"
+                        },
+                        {
+                            "k": "-unity-background-scale-mode",
+                            "v": "scale-to-fit"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "177:274",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/9/3",
+                    "tag": "VisualElement",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 530.0,
+                    "placementOffsetY": -190.0,
+                    "isGroup": false,
+                    "innerW": 860.0,
+                    "innerH": 40.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "440px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "0px"
+                        },
+                        {
+                            "k": "background-image",
+                            "v": "url(\"project://database/Assets/Resources/FigmaExports/Project-Heartbeat/images/img-1gtr4tr1pqv7bv0qk09dt001mrio-149.png?fileID=2800000&guid=d55a2ef4677bb47c1a9d832bb22a3299&type=3#img-1gtr4tr1pqv7bv0qk09dt001mrio-149\")"
+                        },
+                        {
+                            "k": "-unity-background-scale-mode",
+                            "v": "scale-to-fit"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "177:275",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "1/9/4",
+                    "tag": "VisualElement",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 530.0,
+                    "placementOffsetY": -190.0,
+                    "isGroup": false,
+                    "innerW": 860.0,
+                    "innerH": 40.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "200px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "660px"
+                        },
+                        {
+                            "k": "top",
+                            "v": "0px"
+                        },
+                        {
+                            "k": "background-image",
+                            "v": "url(\"project://database/Assets/Resources/FigmaExports/Project-Heartbeat/images/img-1gtr4tr1pqv7bv0qk09dt001mrio-149.png?fileID=2800000&guid=d55a2ef4677bb47c1a9d832bb22a3299&type=3#img-1gtr4tr1pqv7bv0qk09dt001mrio-149\")"
+                        },
+                        {
+                            "k": "-unity-background-scale-mode",
+                            "v": "scale-to-fit"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "20:297",
+                    "cssClass": "",
+                    "styleClass": "heading-4",
+                    "doc": "Heading-4",
+                    "path": "1",
+                    "tag": "VisualElement",
+                    "classes": "heading-4",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": true,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "217px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "47px"
+                        },
+                        {
+                            "k": "color",
+                            "v": "#0D707D"
+                        },
+                        {
+                            "k": "-unity-font-definition",
+                            "v": "url(\"project://database/Assets/TextMesh%20Pro/Fonts/Rubik-Black.ttf?fileID=12800000&guid=1aa3ea8c54a5346a08178cd91a44e3c7&type=3#Rubik-Black\")"
+                        },
+                        {
+                            "k": "font-size",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "-unity-font-style",
+                            "v": "bold"
+                        },
+                        {
+                            "k": "white-space",
+                            "v": "nowrap"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "18:205",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Heading-4",
+                    "path": "1/1",
+                    "tag": "Label",
+                    "classes": "unity-label",
+                    "isText": true,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 217.0,
+                    "innerH": 47.0,
+                    "containerW": 217.0,
+                    "containerH": 47.0,
+                    "containerIdX": "20:297",
+                    "containerIdY": "20:297",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "color",
+                            "v": "#0D707D"
+                        },
+                        {
+                            "k": "-unity-font-definition",
+                            "v": "url(\"project://database/Assets/TextMesh%20Pro/Fonts/Rubik-Black.ttf?fileID=12800000&guid=1aa3ea8c54a5346a08178cd91a44e3c7&type=3#Rubik-Black\")"
+                        },
+                        {
+                            "k": "font-size",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "-unity-font-style",
+                            "v": "bold"
+                        },
+                        {
+                            "k": "white-space",
+                            "v": "nowrap"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "0%"
+                        },
+                        {
+                            "k": "right",
+                            "v": "0%"
+                        },
+                        {
+                            "k": "top",
+                            "v": "0%"
+                        },
+                        {
+                            "k": "bottom",
+                            "v": "0%"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "heading-4__e",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "20:312",
+                    "cssClass": "",
+                    "styleClass": "heading-5",
+                    "doc": "Heading-5",
+                    "path": "1",
+                    "tag": "VisualElement",
+                    "classes": "heading-5",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": true,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "215px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "47px"
+                        },
+                        {
+                            "k": "color",
+                            "v": "#FFEAF1"
+                        },
+                        {
+                            "k": "-unity-font-definition",
+                            "v": "url(\"project://database/Assets/TextMesh%20Pro/Fonts/Rubik-Black.ttf?fileID=12800000&guid=1aa3ea8c54a5346a08178cd91a44e3c7&type=3#Rubik-Black\")"
+                        },
+                        {
+                            "k": "font-size",
+                            "v": "36px"
+                        },
+                        {
+                            "k": "-unity-font-style",
+                            "v": "bold"
+                        },
+                        {
+                            "k": "white-space",
+                            "v": "nowrap"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "20:309",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Heading-5",
+                    "path": "1/1",
+                    "tag": "Label",
+                    "classes": "unity-label",
+                    "isText": true,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 215.0,
+                    "innerH": 47.0,
+                    "containerW": 215.0,
+                    "containerH": 47.0,
+                    "containerIdX": "20:312",
+                    "containerIdY": "20:312",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "color",
+                            "v": "#FFEAF1"
+                        },
+                        {
+                            "k": "-unity-font-definition",
+                            "v": "url(\"project://database/Assets/TextMesh%20Pro/Fonts/Rubik-Black.ttf?fileID=12800000&guid=1aa3ea8c54a5346a08178cd91a44e3c7&type=3#Rubik-Black\")"
+                        },
+                        {
+                            "k": "font-size",
+                            "v": "36px"
+                        },
+                        {
+                            "k": "-unity-font-style",
+                            "v": "bold"
+                        },
+                        {
+                            "k": "white-space",
+                            "v": "nowrap"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "0%"
+                        },
+                        {
+                            "k": "right",
+                            "v": "9.767%"
+                        },
+                        {
+                            "k": "top",
+                            "v": "0%"
+                        },
+                        {
+                            "k": "bottom",
+                            "v": "8.511%"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "heading-5__e",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "20:294",
+                    "cssClass": "",
+                    "styleClass": "heading-3",
+                    "doc": "Heading-3",
+                    "path": "1",
+                    "tag": "VisualElement",
+                    "classes": "heading-3",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": true,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "284px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "62px"
+                        },
+                        {
+                            "k": "color",
+                            "v": "#0D707D"
+                        },
+                        {
+                            "k": "-unity-font-definition",
+                            "v": "url(\"project://database/Assets/TextMesh%20Pro/Fonts/Rubik-Black.ttf?fileID=12800000&guid=1aa3ea8c54a5346a08178cd91a44e3c7&type=3#Rubik-Black\")"
+                        },
+                        {
+                            "k": "font-size",
+                            "v": "52px"
+                        },
+                        {
+                            "k": "-unity-font-style",
+                            "v": "bold"
+                        },
+                        {
+                            "k": "white-space",
+                            "v": "nowrap"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "20:295",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Heading-3",
+                    "path": "1/1",
+                    "tag": "Label",
+                    "classes": "unity-label",
+                    "isText": true,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 284.0,
+                    "innerH": 62.0,
+                    "containerW": 284.0,
+                    "containerH": 62.0,
+                    "containerIdX": "20:294",
+                    "containerIdY": "20:294",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "color",
+                            "v": "#0D707D"
+                        },
+                        {
+                            "k": "-unity-font-definition",
+                            "v": "url(\"project://database/Assets/TextMesh%20Pro/Fonts/Rubik-Black.ttf?fileID=12800000&guid=1aa3ea8c54a5346a08178cd91a44e3c7&type=3#Rubik-Black\")"
+                        },
+                        {
+                            "k": "font-size",
+                            "v": "52px"
+                        },
+                        {
+                            "k": "-unity-font-style",
+                            "v": "bold"
+                        },
+                        {
+                            "k": "white-space",
+                            "v": "nowrap"
+                        },
+                        {
+                            "k": "position",
+                            "v": "absolute"
+                        },
+                        {
+                            "k": "left",
+                            "v": "0%"
+                        },
+                        {
+                            "k": "right",
+                            "v": "1.408%"
+                        },
+                        {
+                            "k": "top",
+                            "v": "0%"
+                        },
+                        {
+                            "k": "bottom",
+                            "v": "0%"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "heading-3__e",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "3:64",
+                    "cssClass": "",
+                    "styleClass": "small-button-default",
+                    "doc": "Small-Button-Default",
+                    "path": "1",
+                    "tag": "VisualElement",
+                    "classes": "small-button-default",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": true,
+                    "layoutMode": "HORIZONTAL",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "display",
+                            "v": "flex"
+                        },
+                        {
+                            "k": "width",
+                            "v": "400px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "80px"
+                        },
+                        {
+                            "k": "padding-top",
+                            "v": "20px"
+                        },
+                        {
+                            "k": "padding-right",
+                            "v": "150px"
+                        },
+                        {
+                            "k": "padding-bottom",
+                            "v": "20px"
+                        },
+                        {
+                            "k": "padding-left",
+                            "v": "50px"
+                        },
+                        {
+                            "k": "align-items",
+                            "v": "center"
+                        },
+                        {
+                            "k": "border-radius",
+                            "v": "10px"
+                        },
+                        {
+                            "k": "background-color",
+                            "v": "#FFEAF1"
+                        },
+                        {
+                            "k": "flex-direction",
+                            "v": "row"
+                        },
+                        {
+                            "k": "color",
+                            "v": "#C04F9E"
+                        },
+                        {
+                            "k": "-unity-font-definition",
+                            "v": "url(\"project://database/Assets/TextMesh%20Pro/Fonts/Rubik-Black.ttf?fileID=12800000&guid=1aa3ea8c54a5346a08178cd91a44e3c7&type=3#Rubik-Black\")"
+                        },
+                        {
+                            "k": "font-size",
+                            "v": "20px"
+                        },
+                        {
+                            "k": "white-space",
+                            "v": "nowrap"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "3:6",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Small-Button-Default",
+                    "path": "1/1",
+                    "tag": "Label",
+                    "classes": "unity-label",
+                    "isText": true,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "flex-shrink",
+                            "v": "0"
+                        },
+                        {
+                            "k": "color",
+                            "v": "#C04F9E"
+                        },
+                        {
+                            "k": "-unity-font-definition",
+                            "v": "url(\"project://database/Assets/TextMesh%20Pro/Fonts/Rubik-Black.ttf?fileID=12800000&guid=1aa3ea8c54a5346a08178cd91a44e3c7&type=3#Rubik-Black\")"
+                        },
+                        {
+                            "k": "font-size",
+                            "v": "20px"
+                        },
+                        {
+                            "k": "white-space",
+                            "v": "nowrap"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "",
+                    "selector": "",
+                    "templateNodeId": "",
+                    "carrier": "small-button-default__e",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "I20:324;18:205",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "",
+                    "tag": "",
+                    "classes": "",
+                    "isText": true,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 217.0,
+                    "innerH": 47.0,
+                    "containerW": 217.0,
+                    "containerH": 47.0,
+                    "containerIdX": "20:297",
+                    "containerIdY": "20:297",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "right",
+                            "v": "25.806%"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "heading-4__i",
+                    "selector": ".heading-4__i .heading-4__e.heading-4__e.heading-4__e.heading-4__e.heading-4__e.heading-4__e.heading-4__e",
+                    "templateNodeId": "18:205",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "I20:332;20:309",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "",
+                    "tag": "",
+                    "classes": "",
+                    "isText": true,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 215.0,
+                    "innerH": 47.0,
+                    "containerW": 215.0,
+                    "containerH": 47.0,
+                    "containerIdX": "20:312",
+                    "containerIdY": "20:312",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "right",
+                            "v": "58.14%"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "heading-5__i",
+                    "selector": ".heading-5__i .heading-5__e.heading-5__e.heading-5__e.heading-5__e.heading-5__e.heading-5__e.heading-5__e",
+                    "templateNodeId": "20:309",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "I20:343;20:295",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "",
+                    "tag": "",
+                    "classes": "",
+                    "isText": true,
+                    "shadowFromContent": false,
+                    "noShadowSpread": false,
+                    "layoutMode": "NONE",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 284.0,
+                    "innerH": 62.0,
+                    "containerW": 284.0,
+                    "containerH": 62.0,
+                    "containerIdX": "20:294",
+                    "containerIdY": "20:294",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "right",
+                            "v": "11.972%"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "heading-3__i",
+                    "selector": ".heading-3__i .heading-3__e.heading-3__e.heading-3__e.heading-3__e.heading-3__e.heading-3__e.heading-3__e",
+                    "templateNodeId": "20:295",
+                    "carrier": "",
+                    "linkedTemplate": false
+                },
+                {
+                    "figmaNodeId": "62:1673",
+                    "cssClass": "",
+                    "styleClass": "",
+                    "doc": "Level-UI",
+                    "path": "",
+                    "tag": "",
+                    "classes": "",
+                    "isText": false,
+                    "shadowFromContent": false,
+                    "noShadowSpread": true,
+                    "layoutMode": "HORIZONTAL",
+                    "gridChild": false,
+                    "gridAbsolute": false,
+                    "placementOffsetX": 0.0,
+                    "placementOffsetY": 0.0,
+                    "isGroup": false,
+                    "innerW": 0.0,
+                    "innerH": 0.0,
+                    "containerW": 0.0,
+                    "containerH": 0.0,
+                    "containerIdX": "",
+                    "containerIdY": "",
+                    "rotation": 0.0,
+                    "turnByBox": false,
+                    "turnW": 0.0,
+                    "turnH": 0.0,
+                    "turnFixed": false,
+                    "turnAbove": false,
+                    "opacityHeld": false,
+                    "tint": false,
+                    "mirrored": false,
+                    "turnA": 0.0,
+                    "turnB": 0.0,
+                    "turnC": 0.0,
+                    "turnD": 0.0,
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "display",
+                            "v": "none"
+                        }
+                    ],
+                    "vars": true,
+                    "inst": "small-button-default__i",
+                    "selector": ".small-button-default__i > .small-button-default.small-button-default.small-button-default.small-button-default.small-button-default.small-button-default.small-button-default",
+                    "templateNodeId": "3:64",
+                    "carrier": "",
+                    "linkedTemplate": false
+                }
+            ],
+            "components": [
+                {
+                    "className": "heading-4",
+                    "masterNodeId": "20:297",
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "217px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "47px"
+                        },
+                        {
+                            "k": "color",
+                            "v": "#0D707D"
+                        },
+                        {
+                            "k": "-unity-font-definition",
+                            "v": "url(\"project://database/Assets/TextMesh%20Pro/Fonts/Rubik-Black.ttf?fileID=12800000&guid=1aa3ea8c54a5346a08178cd91a44e3c7&type=3#Rubik-Black\")"
+                        },
+                        {
+                            "k": "font-size",
+                            "v": "40px"
+                        },
+                        {
+                            "k": "-unity-font-style",
+                            "v": "bold"
+                        },
+                        {
+                            "k": "white-space",
+                            "v": "nowrap"
+                        }
+                    ],
+                    "doc": "Heading-4",
+                    "shadowFromContent": false,
+                    "noShadowSpread": true,
+                    "layoutMode": "NONE",
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "vars": true
+                },
+                {
+                    "className": "heading-5",
+                    "masterNodeId": "20:312",
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "215px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "47px"
+                        },
+                        {
+                            "k": "color",
+                            "v": "#FFEAF1"
+                        },
+                        {
+                            "k": "-unity-font-definition",
+                            "v": "url(\"project://database/Assets/TextMesh%20Pro/Fonts/Rubik-Black.ttf?fileID=12800000&guid=1aa3ea8c54a5346a08178cd91a44e3c7&type=3#Rubik-Black\")"
+                        },
+                        {
+                            "k": "font-size",
+                            "v": "36px"
+                        },
+                        {
+                            "k": "-unity-font-style",
+                            "v": "bold"
+                        },
+                        {
+                            "k": "white-space",
+                            "v": "nowrap"
+                        }
+                    ],
+                    "doc": "Heading-5",
+                    "shadowFromContent": false,
+                    "noShadowSpread": true,
+                    "layoutMode": "NONE",
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "vars": true
+                },
+                {
+                    "className": "heading-3",
+                    "masterNodeId": "20:294",
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "284px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "62px"
+                        },
+                        {
+                            "k": "color",
+                            "v": "#0D707D"
+                        },
+                        {
+                            "k": "-unity-font-definition",
+                            "v": "url(\"project://database/Assets/TextMesh%20Pro/Fonts/Rubik-Black.ttf?fileID=12800000&guid=1aa3ea8c54a5346a08178cd91a44e3c7&type=3#Rubik-Black\")"
+                        },
+                        {
+                            "k": "font-size",
+                            "v": "52px"
+                        },
+                        {
+                            "k": "-unity-font-style",
+                            "v": "bold"
+                        },
+                        {
+                            "k": "white-space",
+                            "v": "nowrap"
+                        }
+                    ],
+                    "doc": "Heading-3",
+                    "shadowFromContent": false,
+                    "noShadowSpread": true,
+                    "layoutMode": "NONE",
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "vars": true
+                },
+                {
+                    "className": "small-button-default",
+                    "masterNodeId": "3:64",
+                    "props": [
+                        {
+                            "k": "display",
+                            "v": "flex"
+                        },
+                        {
+                            "k": "width",
+                            "v": "400px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "80px"
+                        },
+                        {
+                            "k": "padding-top",
+                            "v": "20px"
+                        },
+                        {
+                            "k": "padding-right",
+                            "v": "150px"
+                        },
+                        {
+                            "k": "padding-bottom",
+                            "v": "20px"
+                        },
+                        {
+                            "k": "padding-left",
+                            "v": "50px"
+                        },
+                        {
+                            "k": "align-items",
+                            "v": "center"
+                        },
+                        {
+                            "k": "border-radius",
+                            "v": "10px"
+                        },
+                        {
+                            "k": "background-color",
+                            "v": "#FFEAF1"
+                        },
+                        {
+                            "k": "flex-direction",
+                            "v": "row"
+                        },
+                        {
+                            "k": "color",
+                            "v": "#C04F9E"
+                        },
+                        {
+                            "k": "-unity-font-definition",
+                            "v": "url(\"project://database/Assets/TextMesh%20Pro/Fonts/Rubik-Black.ttf?fileID=12800000&guid=1aa3ea8c54a5346a08178cd91a44e3c7&type=3#Rubik-Black\")"
+                        },
+                        {
+                            "k": "font-size",
+                            "v": "20px"
+                        },
+                        {
+                            "k": "white-space",
+                            "v": "nowrap"
+                        }
+                    ],
+                    "doc": "Small-Button-Default",
+                    "shadowFromContent": false,
+                    "noShadowSpread": true,
+                    "layoutMode": "HORIZONTAL",
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "vars": true
+                }
+            ],
+            "states": [
+                {
+                    "className": "small-button-default",
+                    "pseudo": ":hover",
+                    "figmaNodeId": "3:66",
+                    "paddingOffsetLeft": 0.0,
+                    "paddingOffsetTop": 0.0,
+                    "paddingOffsetRight": 0.0,
+                    "paddingOffsetBottom": 0.0,
+                    "props": [
+                        {
+                            "k": "width",
+                            "v": "500px"
+                        },
+                        {
+                            "k": "height",
+                            "v": "100px"
+                        },
+                        {
+                            "k": "padding-top",
+                            "v": "22.5px"
+                        },
+                        {
+                            "k": "padding-right",
+                            "v": "150px"
+                        },
+                        {
+                            "k": "padding-bottom",
+                            "v": "22.5px"
+                        },
+                        {
+                            "k": "padding-left",
+                            "v": "50px"
+                        },
+                        {
+                            "k": "background-color",
+                            "v": "#C04F9E"
+                        },
+                        {
+                            "k": "color",
+                            "v": "#FFEAF1"
+                        }
+                    ],
+                    "doc": "Small-Button-Default",
+                    "vars": true,
+                    "tint": false,
+                    "part": ""
+                }
+            ],
+            "templateNames": [
+                {
+                    "key": "be0bcbd8565162c7064405f57747bf3445a33ad7",
+                    "name": "Heading-4"
+                },
+                {
+                    "key": "4c5a04271062b2aea5c3de4bd312d47a07693b5f",
+                    "name": "Heading-5"
+                },
+                {
+                    "key": "73854b2666260aeb4ddf4404e6f6dc6e7d7e93be",
+                    "name": "Heading-3"
+                },
+                {
+                    "key": "655ca0dc0e0cfc51e51218f5a63791c752b18212",
+                    "name": "Small-Button-Default"
+                }
+            ],
+            "classNames": [
+                {
+                    "key": "be0bcbd8565162c7064405f57747bf3445a33ad7",
+                    "name": "heading-4"
+                },
+                {
+                    "key": "4c5a04271062b2aea5c3de4bd312d47a07693b5f",
+                    "name": "heading-5"
+                },
+                {
+                    "key": "73854b2666260aeb4ddf4404e6f6dc6e7d7e93be",
+                    "name": "heading-3"
+                },
+                {
+                    "key": "655ca0dc0e0cfc51e51218f5a63791c752b18212",
+                    "name": "small-button-default"
+                },
+                {
+                    "key": "screen:8:169",
+                    "name": "level-ui"
+                },
+                {
+                    "key": "inst:20:324",
+                    "name": "heading-4__i"
+                },
+                {
+                    "key": "inst:20:332",
+                    "name": "heading-5__i"
+                },
+                {
+                    "key": "inst:20:343",
+                    "name": "heading-3__i"
+                },
+                {
+                    "key": "inst:62:1673",
+                    "name": "small-button-default__i"
+                },
+                {
+                    "key": "el:be0bcbd8565162c7064405f57747bf3445a33ad7:18:205",
+                    "name": "heading-4__e"
+                },
+                {
+                    "key": "el:4c5a04271062b2aea5c3de4bd312d47a07693b5f:20:309",
+                    "name": "heading-5__e"
+                },
+                {
+                    "key": "el:73854b2666260aeb4ddf4404e6f6dc6e7d7e93be:20:295",
+                    "name": "heading-3__e"
+                },
+                {
+                    "key": "el:655ca0dc0e0cfc51e51218f5a63791c752b18212:3:6",
+                    "name": "small-button-default__e"
+                }
+            ],
+            "library": [
+                {
+                    "key": "be0bcbd8565162c7064405f57747bf3445a33ad7",
+                    "name": "Heading-4",
+                    "structure": "s1:59:d5ef2d549f78d0c07587c223f4574b4673160d03b24b39dfbed110d416c5f521",
+                    "states": [],
+                    "classes": [
+                        "heading-4",
+                        "heading-4__e"
+                    ],
+                    "images": [],
+                    "nested": [],
+                    "kept": false,
+                    "elements": [
+                        {
+                            "at": 0,
+                            "role": "root",
+                            "cls": "heading-4",
+                            "layer": "20:297"
+                        },
+                        {
+                            "at": 1,
+                            "role": "main",
+                            "cls": "heading-4__e",
+                            "layer": "18:205"
+                        }
+                    ],
+                    "elementsHash": "8f1eb669660a5f7a"
+                },
+                {
+                    "key": "4c5a04271062b2aea5c3de4bd312d47a07693b5f",
+                    "name": "Heading-5",
+                    "structure": "s1:59:d5ef2d549f78d0c07587c223f4574b4673160d03b24b39dfbed110d416c5f521",
+                    "states": [],
+                    "classes": [
+                        "heading-5",
+                        "heading-5__e"
+                    ],
+                    "images": [],
+                    "nested": [],
+                    "kept": false,
+                    "elements": [
+                        {
+                            "at": 0,
+                            "role": "root",
+                            "cls": "heading-5",
+                            "layer": "20:312"
+                        },
+                        {
+                            "at": 1,
+                            "role": "main",
+                            "cls": "heading-5__e",
+                            "layer": "20:309"
+                        }
+                    ],
+                    "elementsHash": "8faa55e4bd1effcc"
+                },
+                {
+                    "key": "73854b2666260aeb4ddf4404e6f6dc6e7d7e93be",
+                    "name": "Heading-3",
+                    "structure": "s1:59:d5ef2d549f78d0c07587c223f4574b4673160d03b24b39dfbed110d416c5f521",
+                    "states": [],
+                    "classes": [
+                        "heading-3",
+                        "heading-3__e"
+                    ],
+                    "images": [],
+                    "nested": [],
+                    "kept": false,
+                    "elements": [
+                        {
+                            "at": 0,
+                            "role": "root",
+                            "cls": "heading-3",
+                            "layer": "20:294"
+                        },
+                        {
+                            "at": 1,
+                            "role": "main",
+                            "cls": "heading-3__e",
+                            "layer": "20:295"
+                        }
+                    ],
+                    "elementsHash": "f3078ae4010d351f"
+                },
+                {
+                    "key": "655ca0dc0e0cfc51e51218f5a63791c752b18212",
+                    "name": "Small-Button-Default",
+                    "structure": "s1:59:d5ef2d549f78d0c07587c223f4574b4673160d03b24b39dfbed110d416c5f521",
+                    "states": [
+                        ":hover"
+                    ],
+                    "classes": [
+                        "small-button-default",
+                        "small-button-default__e"
+                    ],
+                    "images": [],
+                    "nested": [],
+                    "kept": false,
+                    "elements": [
+                        {
+                            "at": 0,
+                            "role": "root",
+                            "cls": "small-button-default",
+                            "layer": "3:64"
+                        },
+                        {
+                            "at": 1,
+                            "role": "main",
+                            "cls": "small-button-default__e",
+                            "layer": "3:6"
+                        }
+                    ],
+                    "elementsHash": "d64dcdd2f5758e33"
+                }
+            ],
+            "links": [],
+            "sheetLinks": [],
+            "keptSheets": [],
+            "libraryVariables": [],
+            "matchedMappings": []
+        }
+    ],
+    "foreign": [],
+    "collections": [],
+    "defaultMode": "",
+    "variables": [],
+    "modeTokens": []
+}

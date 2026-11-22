@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="Note-Button.uss" />
+    <ui:Button class="note-button unity-button note-button-2" />
+</ui:UXML>

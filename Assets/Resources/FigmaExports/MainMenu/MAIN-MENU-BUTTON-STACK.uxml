@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="MAIN-MENU-BUTTON-STACK.uss" />
+    <ui:VisualElement class="main-menu-button-stack" style="display: flex; flex-direction: column; align-items: flex-start;">
+        <ui:Button text="START GAME" class="small-button-default unity-button" style="width: initial; flex-shrink: 0; align-self: stretch;" />
+        <ui:Button text="RECORD LEVEL" class="small-button-default unity-button" style="width: initial; flex-shrink: 0; align-self: stretch;" />
+        <ui:Button text="ACHIEVEMENTS" class="small-button-default unity-button" style="width: initial; flex-shrink: 0; align-self: stretch;" />
+        <ui:Button text="OPTIONS" class="small-button-default unity-button" style="width: initial; flex-shrink: 0; align-self: stretch;" />
+        <ui:Button text="EXIT GAME" class="small-button-default unity-button" style="width: initial; flex-shrink: 0; align-self: stretch;" />
+    </ui:VisualElement>
+</ui:UXML>
