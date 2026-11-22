@@ -14,6 +14,7 @@ public class LevelSelectManager : MonoBehaviour
 
     public GameObject MenuCanvas;
     public GameObject GameCanvas;
+    public GameObject LevelUI;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -35,6 +36,8 @@ public class LevelSelectManager : MonoBehaviour
         LevelManager levelManagerScript = levelManager.GetComponent<LevelManager>();
 
         GameCanvas.SetActive(true);
+        LevelUI.SetActive(true);   
+        
 
         levelManagerScript.conductorController = GameObject.Find("Conductor").GetComponent<ConductorController>();
         levelManagerScript.noteParent = GameObject.Find("NoteHolderParent").GetComponent<Transform>();
@@ -80,12 +83,12 @@ public class LevelSelectManager : MonoBehaviour
             }
 
             GameCanvas.SetActive(true);
+            LevelUI.SetActive(true);
 
             // set necessary game object components
             levelManagerScript.conductorController = GameObject.Find("Conductor").GetComponent<ConductorController>();
             levelManagerScript.noteParent = GameObject.Find("NoteHolderParent").GetComponent<Transform>();
-            levelManagerScript.noteCanvasButtons = Component.FindObjectsByType<Transform>().Where(x => x.name.Contains("NoteButton")).ToList();
-            levelManagerScript.noteCanvasButtons.Sort((a, b) => a.name.CompareTo(b.name));
+            levelManagerScript.noteCanvasButtons = Component.FindObjectsByType<Transform>().Where(x => x.name.Contains("NoteButton")).ToList();            levelManagerScript.noteCanvasButtons.Sort((a, b) => a.name.CompareTo(b.name));
             // need to attach level manager script to the buttons 
             foreach (Transform btn in levelManagerScript.noteCanvasButtons)
             {

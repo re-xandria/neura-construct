@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="Level-UI.uss" />
+    <Template name="Heading-4" src="Heading-4.uxml" />
+    <Template name="Heading-5" src="Heading-5.uxml" />
+    <Template name="Heading-3" src="Heading-3.uxml" />
+    <ui:VisualElement class="level-ui" style="overflow: hidden;">
+        <ui:Instance template="Heading-4" class="heading-4__i" style="position: absolute; left: 120px; top: 114px;">
+            <AttributeOverrides element-name="text-0" text="000000" />
+        </ui:Instance>
+        <ui:Instance template="Heading-5" class="heading-5__i" style="position: absolute; left: 120px; top: 161px;">
+            <AttributeOverrides element-name="text-0" text="1.xxx" />
+        </ui:Instance>
+        <ui:Instance template="Heading-3" class="heading-3__i" style="position: absolute; left: 120px; top: 847px;">
+            <AttributeOverrides element-name="text-0" text="Perfect!" />
+        </ui:Instance>
+    </ui:VisualElement>
+</ui:UXML>

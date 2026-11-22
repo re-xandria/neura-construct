@@ -47,12 +47,4 @@ public class SmallButton : VisualElement
         if (!audioSource.isPlaying) audioSource.Play();
         Debug.Log("Mouse Enter");
     }
-
-    // public void OnPress(PointerDownEvent evt)
-    // {
-    //     audioSource.clip = buttonPressSFX;
-
-    //     if (!audioSource.isPlaying) audioSource.Play();
-    //     Debug.Log("Mouse Enter");
-    // }
 }

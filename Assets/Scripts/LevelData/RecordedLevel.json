@@ -1,3 +1,1588 @@
 {
-    "noteList": []
+    "noteList": [
+        {
+            "buttonType": 2,
+            "noteId": 0,
+            "timeStamp": 16.18400001525879,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 1,
+            "timeStamp": 16.18400001525879,
+            "holdTime": 0.2560005187988281,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 2,
+            "timeStamp": 17.165332794189453,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 3,
+            "timeStamp": 17.20800018310547,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 4,
+            "timeStamp": 18.23200035095215,
+            "holdTime": 0.17066574096679688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 5,
+            "timeStamp": 18.23200035095215,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 6,
+            "timeStamp": 19.256000518798828,
+            "holdTime": 0.17066574096679688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 7,
+            "timeStamp": 19.256000518798828,
+            "holdTime": 0.17066574096679688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 8,
+            "timeStamp": 20.280000686645508,
+            "holdTime": 0.17066574096679688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 9,
+            "timeStamp": 20.32266616821289,
+            "holdTime": 0.1706676483154297,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 10,
+            "timeStamp": 21.261333465576172,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 11,
+            "timeStamp": 21.304000854492188,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 12,
+            "timeStamp": 22.242666244506836,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 13,
+            "timeStamp": 22.28533363342285,
+            "holdTime": 0.17066574096679688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 14,
+            "timeStamp": 23.266666412353516,
+            "holdTime": 0.1706676483154297,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 15,
+            "timeStamp": 23.266666412353516,
+            "holdTime": 0.1706676483154297,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 16,
+            "timeStamp": 24.205333709716797,
+            "holdTime": 0.2560005187988281,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 17,
+            "timeStamp": 24.24799919128418,
+            "holdTime": 0.2560005187988281,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 18,
+            "timeStamp": 25.27199935913086,
+            "holdTime": 0.1706676483154297,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 19,
+            "timeStamp": 25.18666648864746,
+            "holdTime": 0.29866600036621094,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 20,
+            "timeStamp": 26.21066665649414,
+            "holdTime": 0.2560005187988281,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 21,
+            "timeStamp": 26.253334045410156,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 22,
+            "timeStamp": 27.277334213256836,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 23,
+            "timeStamp": 27.191999435424805,
+            "holdTime": 0.29866790771484375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 24,
+            "timeStamp": 28.215999603271484,
+            "holdTime": 0.2560005187988281,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 25,
+            "timeStamp": 28.2586669921875,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 26,
+            "timeStamp": 29.19733238220215,
+            "holdTime": 0.2133350372314453,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 27,
+            "timeStamp": 29.239999771118164,
+            "holdTime": 0.1706676483154297,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 28,
+            "timeStamp": 30.221332550048828,
+            "holdTime": 0.2560005187988281,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 29,
+            "timeStamp": 30.221332550048828,
+            "holdTime": 0.2560005187988281,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 30,
+            "timeStamp": 31.202667236328125,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 31,
+            "timeStamp": 31.15999984741211,
+            "holdTime": 0.29866600036621094,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 32,
+            "timeStamp": 33.16533279418945,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 33,
+            "timeStamp": 33.762664794921875,
+            "holdTime": 0.21333694458007813,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 34,
+            "timeStamp": 35.1706657409668,
+            "holdTime": 0.17066574096679688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 35,
+            "timeStamp": 37.17599868774414,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 36,
+            "timeStamp": 37.73066711425781,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 37,
+            "timeStamp": 39.2239990234375,
+            "holdTime": 0.2560005187988281,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 38,
+            "timeStamp": 41.14400100708008,
+            "holdTime": 0.17066574096679688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 39,
+            "timeStamp": 41.7413330078125,
+            "holdTime": 0.17066574096679688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 40,
+            "timeStamp": 43.23466491699219,
+            "holdTime": 0.12800216674804688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 41,
+            "timeStamp": 45.19733428955078,
+            "holdTime": 0.12799835205078125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 42,
+            "timeStamp": 45.7946662902832,
+            "holdTime": 0.17066574096679688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 43,
+            "timeStamp": 47.202667236328125,
+            "holdTime": 0.12799835205078125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 44,
+            "timeStamp": 49.16533279418945,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 45,
+            "timeStamp": 49.67733383178711,
+            "holdTime": 0.2560005187988281,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 46,
+            "timeStamp": 51.21333312988281,
+            "holdTime": 0.17066574096679688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 47,
+            "timeStamp": 53.13333511352539,
+            "holdTime": 0.17066574096679688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 48,
+            "timeStamp": 53.64533233642578,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 49,
+            "timeStamp": 55.2239990234375,
+            "holdTime": 0.17066574096679688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 50,
+            "timeStamp": 57.10133361816406,
+            "holdTime": 0.12799835205078125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 51,
+            "timeStamp": 57.698665618896484,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 52,
+            "timeStamp": 59.14933395385742,
+            "holdTime": 0.17066574096679688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 53,
+            "timeStamp": 61.11199951171875,
+            "holdTime": 0.17066574096679688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 54,
+            "timeStamp": 61.70933151245117,
+            "holdTime": 0.12800216674804688,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 55,
+            "timeStamp": 63.24533462524414,
+            "holdTime": 0.12799835205078125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 56,
+            "timeStamp": 68.10933685302734,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 57,
+            "timeStamp": 68.91999816894531,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 58,
+            "timeStamp": 70.0719985961914,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 59,
+            "timeStamp": 72.20532989501953,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 60,
+            "timeStamp": 72.88800048828125,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 61,
+            "timeStamp": 73.61333465576172,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 62,
+            "timeStamp": 76.13066864013672,
+            "holdTime": 0.17066192626953125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 63,
+            "timeStamp": 76.08799743652344,
+            "holdTime": 0.25600433349609375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 64,
+            "timeStamp": 76.8133316040039,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 65,
+            "timeStamp": 76.72799682617188,
+            "holdTime": 0.25600433349609375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 66,
+            "timeStamp": 77.53866577148438,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 67,
+            "timeStamp": 77.49600219726563,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 68,
+            "timeStamp": 80.05599975585938,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 69,
+            "timeStamp": 80.01333618164063,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 70,
+            "timeStamp": 80.7386703491211,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 71,
+            "timeStamp": 80.7386703491211,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 72,
+            "timeStamp": 81.50666809082031,
+            "holdTime": 0.17066192626953125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 73,
+            "timeStamp": 81.50666809082031,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 74,
+            "timeStamp": 84.06666564941406,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 75,
+            "timeStamp": 83.98133087158203,
+            "holdTime": 0.29866790771484375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 76,
+            "timeStamp": 84.74933624267578,
+            "holdTime": 0.17066192626953125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 77,
+            "timeStamp": 84.7066650390625,
+            "holdTime": 0.25600433349609375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 78,
+            "timeStamp": 85.43199920654297,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 79,
+            "timeStamp": 85.43199920654297,
+            "holdTime": 0.25600433349609375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 80,
+            "timeStamp": 88.12000274658203,
+            "holdTime": 0.2986602783203125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 81,
+            "timeStamp": 88.88800048828125,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 82,
+            "timeStamp": 89.52799987792969,
+            "holdTime": 0.29866790771484375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 83,
+            "timeStamp": 92.08799743652344,
+            "holdTime": 0.25600433349609375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 84,
+            "timeStamp": 92.77066802978516,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 85,
+            "timeStamp": 93.45333099365234,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 86,
+            "timeStamp": 96.18399810791016,
+            "holdTime": 0.29866790771484375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 87,
+            "timeStamp": 97.12266540527344,
+            "holdTime": 0.25600433349609375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 88,
+            "timeStamp": 98.1893310546875,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 89,
+            "timeStamp": 100.19466400146484,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 90,
+            "timeStamp": 101.13333129882813,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 91,
+            "timeStamp": 102.15733337402344,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 92,
+            "timeStamp": 104.16266632080078,
+            "holdTime": 0.29866790771484375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 93,
+            "timeStamp": 105.14399719238281,
+            "holdTime": 0.25600433349609375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 94,
+            "timeStamp": 106.04000091552734,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 95,
+            "timeStamp": 109.11199951171875,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 96,
+            "timeStamp": 110.09333038330078,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 97,
+            "timeStamp": 111.1173324584961,
+            "holdTime": 0.29866790771484375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 98,
+            "timeStamp": 113.16533660888672,
+            "holdTime": 0.17066192626953125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 99,
+            "timeStamp": 113.20800018310547,
+            "holdTime": 0.12799835205078125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 100,
+            "timeStamp": 115.17066955566406,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 101,
+            "timeStamp": 115.17066955566406,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 102,
+            "timeStamp": 117.21866607666016,
+            "holdTime": 0.12799835205078125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 103,
+            "timeStamp": 117.21866607666016,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 104,
+            "timeStamp": 117.73066711425781,
+            "holdTime": 0.08533477783203125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 105,
+            "timeStamp": 117.64533233642578,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 106,
+            "timeStamp": 119.18133544921875,
+            "holdTime": 0.12799835205078125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 107,
+            "timeStamp": 119.18133544921875,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 108,
+            "timeStamp": 121.1866683959961,
+            "holdTime": 0.12799835205078125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 109,
+            "timeStamp": 121.14399719238281,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 110,
+            "timeStamp": 123.19200134277344,
+            "holdTime": 0.17066192626953125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 111,
+            "timeStamp": 123.19200134277344,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 112,
+            "timeStamp": 125.1546630859375,
+            "holdTime": 0.1280059814453125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 113,
+            "timeStamp": 125.19733428955078,
+            "holdTime": 0.08533477783203125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 114,
+            "timeStamp": 125.70933532714844,
+            "holdTime": 0.12799835205078125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 115,
+            "timeStamp": 125.70933532714844,
+            "holdTime": 0.17066192626953125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 116,
+            "timeStamp": 127.24533081054688,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 117,
+            "timeStamp": 127.24533081054688,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 118,
+            "timeStamp": 136.50399780273438,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 119,
+            "timeStamp": 137.18666076660156,
+            "holdTime": 0.256011962890625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 120,
+            "timeStamp": 138.21066284179688,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 121,
+            "timeStamp": 140.2586669921875,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 122,
+            "timeStamp": 141.24000549316406,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 123,
+            "timeStamp": 142.26400756835938,
+            "holdTime": 0.12799072265625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 124,
+            "timeStamp": 144.2693328857422,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 125,
+            "timeStamp": 145.20799255371094,
+            "holdTime": 0.213348388671875,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 126,
+            "timeStamp": 146.23199462890625,
+            "holdTime": 0.1280059814453125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 127,
+            "timeStamp": 148.27999877929688,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 128,
+            "timeStamp": 149.26133728027344,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 129,
+            "timeStamp": 150.28533935546875,
+            "holdTime": 0.170654296875,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 130,
+            "timeStamp": 152.29066467285156,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 131,
+            "timeStamp": 153.27200317382813,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 132,
+            "timeStamp": 154.25332641601563,
+            "holdTime": 0.1280059814453125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 133,
+            "timeStamp": 156.30133056640625,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 134,
+            "timeStamp": 157.19732666015625,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 135,
+            "timeStamp": 158.22132873535156,
+            "holdTime": 0.256011962890625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 136,
+            "timeStamp": 160.2693328857422,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 137,
+            "timeStamp": 161.25067138671875,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 138,
+            "timeStamp": 162.23199462890625,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 139,
+            "timeStamp": 164.27999877929688,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 140,
+            "timeStamp": 165.3040008544922,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 141,
+            "timeStamp": 166.24266052246094,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 142,
+            "timeStamp": 168.29066467285156,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 143,
+            "timeStamp": 169.22933959960938,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 144,
+            "timeStamp": 170.21066284179688,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 145,
+            "timeStamp": 172.2586669921875,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 146,
+            "timeStamp": 173.19732666015625,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 147,
+            "timeStamp": 174.22132873535156,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 148,
+            "timeStamp": 176.1840057373047,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 149,
+            "timeStamp": 176.22666931152344,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 150,
+            "timeStamp": 177.1653289794922,
+            "holdTime": 0.256011962890625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 151,
+            "timeStamp": 177.25067138671875,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 152,
+            "timeStamp": 178.23199462890625,
+            "holdTime": 0.0853424072265625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 153,
+            "timeStamp": 178.23199462890625,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 154,
+            "timeStamp": 179.2133331298828,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 155,
+            "timeStamp": 179.25599670410156,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 156,
+            "timeStamp": 180.19467163085938,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 157,
+            "timeStamp": 180.19467163085938,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 158,
+            "timeStamp": 181.2186737060547,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 159,
+            "timeStamp": 181.26133728027344,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 160,
+            "timeStamp": 182.28533935546875,
+            "holdTime": 0.170654296875,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 161,
+            "timeStamp": 182.24266052246094,
+            "holdTime": 0.256011962890625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 162,
+            "timeStamp": 183.2239990234375,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 163,
+            "timeStamp": 183.26666259765625,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 164,
+            "timeStamp": 184.2480010986328,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 165,
+            "timeStamp": 184.20533752441406,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 166,
+            "timeStamp": 185.18666076660156,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 167,
+            "timeStamp": 185.22933959960938,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 168,
+            "timeStamp": 186.25332641601563,
+            "holdTime": 0.1706695556640625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 169,
+            "timeStamp": 186.21066284179688,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 170,
+            "timeStamp": 187.2346649169922,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 171,
+            "timeStamp": 187.27732849121094,
+            "holdTime": 0.256011962890625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 172,
+            "timeStamp": 188.21600341796875,
+            "holdTime": 0.2986602783203125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 173,
+            "timeStamp": 188.2586669921875,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 174,
+            "timeStamp": 189.24000549316406,
+            "holdTime": 0.2986602783203125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 175,
+            "timeStamp": 189.24000549316406,
+            "holdTime": 0.2986602783203125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 176,
+            "timeStamp": 190.22132873535156,
+            "holdTime": 0.256011962890625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 177,
+            "timeStamp": 190.22132873535156,
+            "holdTime": 0.341339111328125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 178,
+            "timeStamp": 191.24533081054688,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 179,
+            "timeStamp": 191.28799438476563,
+            "holdTime": 0.298675537109375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 180,
+            "timeStamp": 192.22666931152344,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 181,
+            "timeStamp": 192.2693328857422,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 182,
+            "timeStamp": 193.20799255371094,
+            "holdTime": 0.298675537109375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 183,
+            "timeStamp": 193.25067138671875,
+            "holdTime": 0.2986602783203125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 184,
+            "timeStamp": 194.1893310546875,
+            "holdTime": 0.298675537109375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 185,
+            "timeStamp": 194.1893310546875,
+            "holdTime": 0.298675537109375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 186,
+            "timeStamp": 195.2133331298828,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 187,
+            "timeStamp": 195.25599670410156,
+            "holdTime": 0.298675537109375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 188,
+            "timeStamp": 196.23733520507813,
+            "holdTime": 0.2986602783203125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 189,
+            "timeStamp": 196.32266235351563,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 190,
+            "timeStamp": 197.17599487304688,
+            "holdTime": 0.298675537109375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 191,
+            "timeStamp": 197.17599487304688,
+            "holdTime": 0.341339111328125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 192,
+            "timeStamp": 198.15733337402344,
+            "holdTime": 0.341339111328125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 3,
+            "noteId": 193,
+            "timeStamp": 198.28533935546875,
+            "holdTime": 0.2133331298828125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 1,
+            "noteId": 194,
+            "timeStamp": 199.2239990234375,
+            "holdTime": 0.2559967041015625,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 195,
+            "timeStamp": 199.26666259765625,
+            "holdTime": 0.298675537109375,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 0,
+            "noteId": 196,
+            "timeStamp": 200.20533752441406,
+            "holdTime": 0.2986602783203125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        },
+        {
+            "buttonType": 2,
+            "noteId": 197,
+            "timeStamp": 200.20533752441406,
+            "holdTime": 0.2986602783203125,
+            "playerPressedAt": 0.0,
+            "isColliding": false
+        }
+    ]
 }

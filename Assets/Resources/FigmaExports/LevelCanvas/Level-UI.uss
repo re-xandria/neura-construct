@@ -1,0 +1,28 @@
+.level-ui {
+    width: 1920px;
+    height: 1080px;
+    flex-shrink: 0;
+}
+
+.unity-ui-document__root > .level-ui {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: auto;
+    height: auto;
+}
+
+.heading-4__i .heading-4__e.heading-4__e.heading-4__e.heading-4__e.heading-4__e.heading-4__e.heading-4__e {
+    right: 25.806%;
+}
+
+.heading-5__i .heading-5__e.heading-5__e.heading-5__e.heading-5__e.heading-5__e.heading-5__e.heading-5__e {
+    right: 58.14%;
+}
+
+.heading-3__i .heading-3__e.heading-3__e.heading-3__e.heading-3__e.heading-3__e.heading-3__e.heading-3__e {
+    right: 11.972%;
+}
+

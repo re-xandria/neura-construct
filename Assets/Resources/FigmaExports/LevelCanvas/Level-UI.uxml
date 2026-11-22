@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="Heading-3" src="project://database/Assets/Resources/FigmaExports/LevelCanvas/Heading-3.uxml?fileID=9197481963319205126&amp;guid=73552d4f540934e24a8e9c897689c4c3&amp;type=3#Heading-3"/>
+    <ui:Template name="Heading-4" src="project://database/Assets/Resources/FigmaExports/LevelCanvas/Heading-4.uxml?fileID=9197481963319205126&amp;guid=b1a38c6d270ea48608868b087dc8b258&amp;type=3#Heading-4"/>
+    <ui:Template name="Heading-5" src="project://database/Assets/Resources/FigmaExports/LevelCanvas/Heading-5.uxml?fileID=9197481963319205126&amp;guid=c837e6c0ebe7345618d031d465035fed&amp;type=3#Heading-5"/>
+    <Style src="project://database/Assets/Resources/FigmaExports/LevelCanvas/Level-UI.uss?fileID=7433441132597879392&amp;guid=bdba8681050a946f9a49d13c7c27e390&amp;type=3#Level-UI"/>
+    <ui:VisualElement class="level-ui" style="overflow: hidden;">
+        <ui:Instance template="Heading-4" class="heading-4__i" style="position: absolute; left: 120px; top: 114px;">
+            <AttributeOverrides element-name="text-0" text="000000"/>
+        </ui:Instance>
+        <ui:Instance template="Heading-5" class="heading-5__i" style="position: absolute; left: 120px; top: 161px;">
+            <AttributeOverrides element-name="text-0" text="1.xxx"/>
+        </ui:Instance>
+        <ui:Instance template="Heading-3" class="heading-3__i" style="position: absolute; left: 117px; top: 527px;">
+            <AttributeOverrides element-name="text-0" text="Perfect!"/>
+        </ui:Instance>
+    </ui:VisualElement>
+</ui:UXML>

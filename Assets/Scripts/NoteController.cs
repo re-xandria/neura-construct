@@ -39,6 +39,7 @@ public class NoteController : MonoBehaviour
         if (!collidedButton) return;
 
         ndata.isColliding = true;
+        Debug.Log($"ndata: {ndata.noteId} isColliding {ndata.isColliding}");
     }
 
     // we should get rid of this callback and instead add an input handler on press of the key that only deletes the note nearest the judgement ine

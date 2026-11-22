@@ -20,9 +20,9 @@ public class StartMenuController : ScreenBase
     {
         base.OnEnable();
 
-        Buttons["START GAME"].OnClick = () => levelSelectManager.StartLevel("Level1");
-        Buttons["RECORD LEVEL"].OnClick = () => levelSelectManager.RecordLevel();
-        Buttons["EXIT GAME"].OnClick = () => Application.Quit();
+        SmallButtons["START GAME"].OnClick = () => levelSelectManager.StartLevel("Level1");
+        SmallButtons["RECORD LEVEL"].OnClick = () => levelSelectManager.RecordLevel();
+        SmallButtons["EXIT GAME"].OnClick = () => Application.Quit();
     }
 
 }

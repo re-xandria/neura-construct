@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="Heading-5.uss" />
+    <ui:VisualElement class="heading-5">
+        <ui:Label name="text-0" text="HEADING 5" class="unity-label heading-5__e" />
+    </ui:VisualElement>
+</ui:UXML>

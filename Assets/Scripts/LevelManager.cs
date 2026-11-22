@@ -3,11 +3,13 @@ using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class LevelManager : MonoBehaviour
 {
 
     public ConductorController conductorController;
+    public UIDocument LevelCanvas;
 
     public List<NoteData> NoteList = new List<NoteData>();
     private List<Transform> spawnedNotesToPlay = new List<Transform>();
@@ -36,6 +38,7 @@ public class LevelManager : MonoBehaviour
         previousBeat = GetCurrentBeat();
 
         delayTime = conductorController.secPerBeat;
+        timer = GameObject.Find("Timer");
 
         if (conductorController.playGame) PopulateStoredNotes();
     }
