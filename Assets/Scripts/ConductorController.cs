@@ -27,7 +27,7 @@ public class ConductorController : MonoBehaviour
     public double dspSongTime;
 
     private bool songStarted;
-    private bool songRunning;
+    public bool songRunning;
 
     //an AudioSource attached to this GameObject that will play the music.
     public AudioSource musicSource;

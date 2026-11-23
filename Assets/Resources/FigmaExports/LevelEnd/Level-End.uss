@@ -1,0 +1,47 @@
+.level-end {
+    width: 1920px;
+    height: 1080px;
+    flex-shrink: 0;
+}
+
+.unity-ui-document__root > .level-end {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: auto;
+    height: auto;
+}
+
+.heading-1__i > .heading-1.heading-1.heading-1.heading-1.heading-1.heading-1.heading-1 {
+    -unity-text-outline-width: 5px;
+    -unity-text-outline-color: #C04F9E;
+    letter-spacing: 8px;
+}
+
+.heading-1__i .heading-1__e.heading-1__e.heading-1__e.heading-1__e.heading-1__e.heading-1__e.heading-1__e {
+    -unity-text-outline-width: 5px;
+    -unity-text-outline-color: #C04F9E;
+    letter-spacing: 8px;
+}
+
+.heading-1__i-2 > .heading-1.heading-1.heading-1.heading-1.heading-1.heading-1.heading-1 {
+    border-radius: 10px;
+    -unity-text-outline-width: 10px;
+    -unity-text-outline-color: #C04F9E;
+    font-size: 164px;
+    letter-spacing: 16.4px;
+}
+
+.heading-1__i-2 .heading-1__e.heading-1__e.heading-1__e.heading-1__e.heading-1__e.heading-1__e.heading-1__e {
+    -unity-text-outline-width: 10px;
+    -unity-text-outline-color: #C04F9E;
+    font-size: 164px;
+    letter-spacing: 16.4px;
+}
+
+.heading-5__i > .heading-5.heading-5.heading-5.heading-5.heading-5.heading-5.heading-5 {
+    width: 100%;
+}
+

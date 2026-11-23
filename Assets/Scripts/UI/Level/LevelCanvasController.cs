@@ -33,5 +33,6 @@ public class LevelCanvasController : ScreenBase
     private void HandleHitRating()
     {
         scoreManager.hitRatingElement = Headings3["Perfect!"];
+        scoreManager.hitRatingElement.text = ""; 
     }
 }

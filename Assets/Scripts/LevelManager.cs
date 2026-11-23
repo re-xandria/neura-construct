@@ -9,7 +9,7 @@ public class LevelManager : MonoBehaviour
 {
 
     public ConductorController conductorController;
-    public UIDocument LevelCanvas;
+    public ScoreManager scoreManager;
 
     public List<NoteData> NoteList = new List<NoteData>();
     private List<Transform> spawnedNotesToPlay = new List<Transform>();
@@ -28,11 +28,13 @@ public class LevelManager : MonoBehaviour
     public GameObject timer;
 
     private float delayTime;
+    public bool isLevelRunning;
 
     void Start()
     {
         if (!conductorController) conductorController = ConductorController.Instance;
         if (!conductorController) return;
+        scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
 
         spawnBeat = conductorController.songPositionInBeats;
         previousBeat = GetCurrentBeat();
@@ -41,6 +43,7 @@ public class LevelManager : MonoBehaviour
         timer = GameObject.Find("Timer");
 
         if (conductorController.playGame) PopulateStoredNotes();
+        isLevelRunning = true;
     }
 
     private void PopulateStoredNotes()
@@ -168,11 +171,13 @@ public class LevelManager : MonoBehaviour
         int index = NoteList.IndexOf(noteData);
         if (index >= 0)
         {
-            Destroy(spawnedNotesToPlay[index].gameObject);
-            crossingLogged.RemoveAt(index);
-            previousNoteY.RemoveAt(index);
-            spawnedNotesToPlay.RemoveAt(index);
-            NoteList.RemoveAt(index);
+            if (noteData.playerPressedAt == 0) scoreManager.UpdateScore(0, noteData.timeStamp);
+            else scoreManager.UpdateScore(noteData.playerPressedAt, noteData.timeStamp);
+                Destroy(spawnedNotesToPlay[index].gameObject);
+                crossingLogged.RemoveAt(index);
+                previousNoteY.RemoveAt(index);
+                spawnedNotesToPlay.RemoveAt(index);
+                NoteList.RemoveAt(index);
         }
     }
 

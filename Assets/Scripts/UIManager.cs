@@ -6,33 +6,48 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
-public class LevelSelectManager : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
 
     public ConductorController conductorController;
     public Transform levelManagerPrefab;
+    private Transform levelManager;
 
-    public GameObject MenuCanvas;
+    public GameObject MainMenuUI;
     public GameObject GameCanvas;
     public GameObject LevelUI;
+    public GameObject LevelEndUI;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        conductorController = GameObject.Find("Conductor").GetComponent<ConductorController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (levelManager != null)
+        {
+            LevelManager levelManagerScript = levelManager.GetComponent<LevelManager>();
+            if (levelManagerScript.NoteList.Count == 0)
+            {
+                if (!conductorController.musicSource.isPlaying)
+                {
+                    conductorController.songRunning = false;
+                    EndLevel();
+                }
+            }
+        }
+        
     }
 
     public void RecordLevel()
     {
-        MenuCanvas.SetActive(false);
+        MainMenuUI.SetActive(false);
 
-        Transform levelManager = Instantiate(levelManagerPrefab, GameCanvas.GetComponent<Transform>());
+        levelManager = Instantiate(levelManagerPrefab, GameCanvas.GetComponent<Transform>());
         LevelManager levelManagerScript = levelManager.GetComponent<LevelManager>();
 
         GameCanvas.SetActive(true);
@@ -56,8 +71,8 @@ public class LevelSelectManager : MonoBehaviour
 
     public void StartLevel(string levelName)
     {
-        MenuCanvas.SetActive(false);
-        Transform levelManager = Instantiate(levelManagerPrefab, GameCanvas.GetComponent<Transform>());
+        MainMenuUI.SetActive(false);
+        levelManager = Instantiate(levelManagerPrefab, GameCanvas.GetComponent<Transform>());
         LevelManager levelManagerScript = levelManager.GetComponent<LevelManager>();
 
         string filePathDev = Path.Combine(Application.dataPath, $"Scripts/LevelData/{levelName}.json");
@@ -104,5 +119,15 @@ public class LevelSelectManager : MonoBehaviour
         {
             Debug.LogError($"Cannot find JSON file at: {filePathDev} or {filePathBuild}");
         }
+    }
+
+    public void EndLevel()
+    {
+        // Application.Quit();
+        GameCanvas.SetActive(false);
+        LevelUI.SetActive(false);
+        LevelEndUI.SetActive(true);
+        conductorController.playGame = false;
+        Destroy(levelManager.gameObject);
     }
 }

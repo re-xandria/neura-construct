@@ -26,7 +26,7 @@ public class ButtonController : MonoBehaviour
     void Update()
     {
         List<NoteData> collidingNotes = levelManager.NoteList.Where(n => n.buttonType == this.buttonType && n.isColliding).ToList();
-        Debug.Log($"Colliding Notes Count: {collidingNotes.Count}");
+        // Debug.Log($"Colliding Notes Count: {collidingNotes.Count}");
 
         if (Input.GetKeyDown(_Key))
         {
@@ -79,7 +79,7 @@ public class ButtonController : MonoBehaviour
         Debug.Log($"This button is being deleted: {ndata.noteId}");
             ndata.playerPressedAt = conductorController.GetSongPositionInBeats();
             // Debug.Log($"Player Pressed At: " + ndata.playerPressedAt);
-            scoreManager.UpdateScore(ndata.playerPressedAt, ndata.timeStamp);
+            // scoreManager.UpdateScore(ndata.playerPressedAt, ndata.timeStamp);
             ndata.isColliding = false;
             levelManager.DeleteNote(ndata);
             return;
