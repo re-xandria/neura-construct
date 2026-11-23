@@ -39,12 +39,12 @@ public class ScoreManager : MonoBehaviour
         // calc diff between beat player pressed and actual note time stamp
         float timeDiff = Mathf.Abs(pressedAt - timeStamp);
     
-        if (timeDiff < 0.25f) {
+        if (timeDiff < 0.1f) {
             score += scoreSystem.perfect;
             hitRatingElement.text = "Perfect!";
             Debug.Log($"pressedAt {pressedAt} and timeStamp {timeStamp} | PERFECT");
         }
-        else if (timeDiff < 0.5f) {
+        else if (timeDiff < 0.25f) {
             score += scoreSystem.okay;
             hitRatingElement.text = "Okay";
             Debug.Log($"pressedAt {pressedAt} and timeStamp {timeStamp} | OKAY");

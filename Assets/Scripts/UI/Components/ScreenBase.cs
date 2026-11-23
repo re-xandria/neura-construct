@@ -21,15 +21,16 @@ public abstract class ScreenBase : MonoBehaviour
 
     void Awake()
     {
-        stylesheets = Resources.LoadAll("Styles").OfType<StyleSheet>().ToList();
+        uiDocument = GetComponent<UIDocument>();
     }
 
     protected virtual void OnEnable()
     {
-        uiDocument = GetComponent<UIDocument>();
         ClearComponents();
         VisualElement root = uiDocument.rootVisualElement;
 
+        stylesheets = Resources.LoadAll("Styles").OfType<StyleSheet>().ToList();
+        
         ApplyStyleOverrides(root);
         FindSmallSmallButtons(root);
         FindHeadings(root);
@@ -77,7 +78,7 @@ public abstract class ScreenBase : MonoBehaviour
         Debug.Log("Heading Elements: " + root.Query<VisualElement>().ToList().Count);
         root.Query<VisualElement>().ForEach(element =>
         {
-            if (element.ClassListContains("heading-1"))
+            if (element.ClassListContains("heading-1 || Heading-1"))
             {
                 Heading1 wrapper = new Heading1(element);
                 if (!string.IsNullOrEmpty(wrapper.text))
@@ -120,5 +121,7 @@ public abstract class ScreenBase : MonoBehaviour
             }
         });
     }
+
+    
 
 }

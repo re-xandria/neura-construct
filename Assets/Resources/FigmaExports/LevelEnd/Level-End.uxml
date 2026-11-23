@@ -2,7 +2,6 @@
     <Style src="Level-End.uss" />
     <Template name="Heading-1" src="Heading-1.uxml" />
     <Template name="Heading-5" src="Heading-5.uxml" />
-    <Template name="Small-Button-Default" src="Small-Button-Default.uxml" />
     <ui:VisualElement class="level-end" style="overflow: hidden; background-color: #EDB99F;">
         <ui:VisualElement style="width: 1920px; height: 178px; background-color: rgba(192, 79, 158, 0.45); position: absolute; left: 0px; top: 72px;" />
         <ui:Instance template="Heading-1" class="heading-1__i" style="position: absolute; left: 50%; margin-left: -398px; top: 113px;">
@@ -88,8 +87,6 @@
                 <AttributeOverrides element-name="text-0" text="GAME HISTORY" />
             </ui:Instance>
         </ui:VisualElement>
-        <ui:Instance template="Small-Button-Default" style="position: absolute; left: 1181px; top: 866px;">
-            <AttributeOverrides element-name="text-0" text="NEXT LEVEL" />
-        </ui:Instance>
+        <ui:Button text="NEXT LEVEL" class="small-button-default unity-button" style="position: absolute; left: 1181px; top: 866px;" />
     </ui:VisualElement>
 </ui:UXML>

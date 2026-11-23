@@ -39,7 +39,7 @@ public class LevelManager : MonoBehaviour
         spawnBeat = conductorController.songPositionInBeats;
         previousBeat = GetCurrentBeat();
 
-        delayTime = conductorController.secPerBeat;
+        delayTime = conductorController.secPerBeat * 4;
         timer = GameObject.Find("Timer");
 
         if (conductorController.playGame) PopulateStoredNotes();

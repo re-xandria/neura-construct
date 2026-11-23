@@ -130,4 +130,9 @@ public class UIManager : MonoBehaviour
         conductorController.playGame = false;
         Destroy(levelManager.gameObject);
     }
+
+    public void ShowMainMenu()
+    {
+        MainMenuUI.SetActive(true);
+    }
 }
